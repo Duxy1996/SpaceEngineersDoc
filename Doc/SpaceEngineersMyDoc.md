@@ -1288,3 +1288,13 @@ void Main() {
 
 }
 ```
+
+Fonts:
+Space Engineers oficial:
+- http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
+Space Engineers wiki:
+- http://www.spaceengineerswiki.com/Scripting_API_Documentation
+Space Engineers Game:
+- http://store.steampowered.com/app/244850/
+Space Engineers Workshop:
+- https://steamcommunity.com/workshop/browse/?appid=244850
