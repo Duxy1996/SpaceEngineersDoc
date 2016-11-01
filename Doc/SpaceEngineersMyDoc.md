@@ -10,7 +10,7 @@ bool 	ShowOnHUD
 Fields: only read properties;
 Terminal properties: modifycable properties;
 
-####Antenna####
+##Antenna##
 
 Interface name: IMyRadioAntenna
 Parent: IMyFunctionalBlock
@@ -58,7 +58,7 @@ void Main() {
 }
 ```
 
-####Arc furnace####
+##Arc furnace##
 
 Interface name: IMyRefinery
 Parent: IMyProductionBlock
@@ -72,11 +72,12 @@ UseConveyor -> Use Conveyor System On/Off
 
 code in c# :
 
+```c
 class IMyRefinery {
 	bool UseConveyorSystem;
 }
-
-####Artificial Mass####
+```
+##Artificial Mass##
 
 Interface name: IMyVirtualMass
 Parent: IMyFunctionalBlock
@@ -86,7 +87,7 @@ OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 
-####Assembler####
+##Assembler##
 
 Interface name: IMyAssembler
 Parent: IMyProductionBlock
@@ -98,7 +99,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Battery####
+##Battery##
 
 Interface name: IMyBatteryBlock
 Parent: IMyFunctionalBlock
@@ -109,7 +110,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 Recharge -> Recharge On/Off
 
-####Beacon####
+##Beacon##
 
 Interface name: IMyBeacon
 Parent: IMyFunctionalBlock
@@ -123,13 +124,13 @@ OnOff_Off -> Toggle block Off
 IncreaseRadius -> Increase Broadcast radius
 DecreaseRadius -> Decrease Broadcast radius
 
-####Button Panel####
+##Button Panel##
 Interface name: IMyButtonPanel
 Fields: bool AnyoneCanUse
 Actions:
 AnyoneCanUse -> Anyone Can Use On/Off
 
-####Camera####
+##Camera##
 Interface name: IMyCameraBlock
 Parent: IMyFunctionalBlock
 Fields: None
@@ -139,7 +140,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 View -> View
 
-####Cockpit####
+##Cockpit##
 
 Interface name: IMyCockpit
 Parent: IMyShipController
@@ -154,7 +155,7 @@ ControlWheels -> Control wheels On/Off
 HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 
-####Collector####
+##Collector##
 
 Interface name: IMyCollector
 Parent: IMyFunctionalBlock
@@ -165,7 +166,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Connector####
+##Connector##
 
 Interface name: IMyShipConnector
 Parent: IMyFunctionalBlock
@@ -181,13 +182,13 @@ ThrowOut -> Throw Out On/Off
 CollectAll -> Collect All On/Off
 SwitchLock -> Switch lock
 
-####Control Panel####
+##Control Panel##
 
 Interface name: IMyControlPanel
 Fields: None
 Actions: None
 
-####Control Station####
+##Control Station##
 
 Interface name: IMyCockpit
 Parent: IMyShipController
@@ -202,7 +203,7 @@ ControlWheels -> Control wheels On/Off
 HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 
-####Door####
+##Door##
 
 Interface name: IMyDoor
 Parent: IMyFunctionalBlock
@@ -214,15 +215,15 @@ OnOff_Off -> Toggle block Off
 Open -> Open/Closed
 Open_On -> Open
 Open_Off -> Closed
-
+```c
 code for gettin actions:
 
 	door1.GetActionWithName("Open_Off").Apply(door1);
     door2.GetActionWithName("OnOff_On").Apply(door2);
     door2.GetActionWithName("Open").Apply(door2);
 
-####Drill####
-
+##Drill##
+```
 Interface name: IMyShipDrill
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
@@ -232,7 +233,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Flight Seat####
+##Flight Seat##
 
 Interface name: IMyCockpit
 Parent: IMyShipController
@@ -249,7 +250,7 @@ ControlWheels -> Control wheels On/Off
 HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 
-####Gatling Turret####
+##Gatling Turret##
 
 Interface name: IMyLargeGatlingTurret
 Parent: IMyLargeConveyorTurretBase
@@ -273,7 +274,7 @@ DecreaseRange -> Decrease Radius
 UseConveyor -> Use Conveyor System On/Off
 Terminal block and action name list - 2/5
 
-####Gravity Generator####
+##Gravity Generator##
 
 Interface name: IMyGravityGenerator
 Parent: IMyGravityGeneratorBase
@@ -306,12 +307,13 @@ DecreaseGravity -> Decrease Acceleration
 
 code in c# to set values to fields:
 
+```c
 IMyGravityGenerator.SetValueFloat("Gravity", 1.0f);
 IMyGravityGenerator.SetValueFloat("Width", 60.0f);
 IMyGravityGenerator.SetValueFloat("Height", 60.0f);
 IMyGravityGenerator.SetValueFloat("Depth", 60.0f);
-
-####Grinder####
+```
+##Grinder##
 
 Interface name: IMyShipGrinder
 Parent: IMyShipToolBase
@@ -324,17 +326,19 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Gyroscope####
+##Gyroscope##
 
 Interface name: IMyGyro
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
 float GyroPower 
 bool GyroOverride 
 float Yaw 
 float Pitch 
 float Roll 
+```
 
 Actions:
 OnOff -> Toggle block On/Off
@@ -350,18 +354,21 @@ DecreasePitch -> Decrease Pitch override
 IncreaseRoll -> Increase Roll override
 DecreaseRoll -> Decrease Roll override
 
-####Interior Light####
+##Interior Light##
 
 Interface name: IMyInteriorLight
 Parent: IMyLightingBlock
 Parent: IMyFunctionalBlock
 
 Fields:
+
+```c
 float Radius
 float Intensity
 float BlinkIntervalSeconds
 float BlinkLenght
 float BlinkOffset
+```
 
 Terminal properties:
 Color -> Color
@@ -386,6 +393,7 @@ DecreaseBlink Offset -> Decrease Blink Offset
 
 code in c# to set values to fields:
 
+```c
 IMyInteriorLight.SetValueColor("Color", Color);
 IMyInteriorLight.SetValueFloat("Radius", 60.0f);
 IMyInteriorLight.SetValueFloat("Falloff", 60.0f);
@@ -393,16 +401,21 @@ IMyInteriorLight.SetValueFloat("Intensity", 60.0f);
 IMyInteriorLight.SetValueFloat("Blink Interval", 60.0f);
 IMyInteriorLight.SetValueFloat("Blink Lenght", 60.0f);
 IMyInteriorLight.SetValueFloat("Blink Offset", 60.0f);
+```
 
-####Interior Turret####
+##Interior Turret##
 
 Interface name: IMyLargeInteriorTurret
 Parent: IMyLargeTurretBase
 Parent: IMyFunctionalBlock
 
 Fields:
+
+```c
 bool CanControl
 float Range
+```
+
 Terminal properties:
 Radius -> Single
 
@@ -418,7 +431,7 @@ code in c# to set values to fields:
 
 IMyLargeInteriorTurret.SetValueFloat("Radius", 60.0f);
 
-####Landing Gear####
+##Landing Gear##
 
 Interface name: IMyLandingGear
 Parent: IMyFunctionalBlock
@@ -444,7 +457,7 @@ code in c# to set values to fields:
 
 IMyLandingGear.SetValueFloat("BreakForce", 60.0f);
 
-####Small Cargo Container####
+##Small Cargo Container##
 
 Interface name: IMyCargoContainer
 Fields: None
@@ -455,13 +468,13 @@ Interface name: IMyCargoContainer
 Fields: None
 Actions:None
 
-####Large Cargo Container####
+##Large Cargo Container##
 
 Interface name: IMyCargoContainer
 Fields: None
 Actions: None
 
-####Small Reactor####
+##Small Reactor##
 
 Interface name: IMyReactor
 Parent: IMyFunctionalBlock
@@ -473,35 +486,38 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-code in c#:
+Code in c#:
 
+```c
 class IMyReactor{
 
 
 
 }
+```
+Code example in c#:
 
-code example in c#:
-
+```c
 void Main(){
 	 IMyReactor  reactor  = GridTerminalSystem.GetBlockWithName("rec") as IMyReactor; 
 	 bool is_fuctional = reactor.IsFuctional;// return true if reactor is working	 
      bool y = reactor.UseConveyorSystem;// if it is connect to others
 }
+```
 
-
-####Large Reactor####
+##Large Reactor##
 
 Interface name: IMyReactor
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
+
 Actions:
 OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Small Thruster####
+##Small Thruster##
 Interface name: IMyThrust
 Parent: IMyFunctionalBlock
 
@@ -523,7 +539,7 @@ IMyThrust.SetValueFloat("Override", 60.0f);
 
 
 
-####Large Thruster####
+##Large Thruster##
 
 Interface name: IMyThrust
 Parent: IMyFunctionalBlock
@@ -541,10 +557,10 @@ IncreaseOverride -> Increase Thrust override
 DecreaseOverride -> Decrease Thrust override
 
 code in c# to set values to fields:
-
+```c
 IMyThrust.SetValueFloat("Override", 60.0f);
-
-####Medical Room####
+```
+##Medical Room##
 
 Interface name: IMyMedicalRoom
 Parent: IMyFunctionalBlock
@@ -554,7 +570,7 @@ OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 
-####Merge Block####
+##Merge Block##
 
 Interface name: IMyShipMergeBlock
 Parent: IMyFunctionalBlock
@@ -564,7 +580,7 @@ OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 
-####Missile Turret####
+##Missile Turret##
 
 Interface name: IMyLargeMissileTurret
 Parent: IMyLargeConveyorTurretBase
@@ -592,7 +608,7 @@ code in c# to set values to fields:
 
 IMyLargeMissileTurret.SetValueFloat("Range", 60.0f);
 
-####Ore Detector####
+##Ore Detector##
 
 Interace name: IMyOreDetector
 Parent: IMyFunctionalBlock
@@ -618,7 +634,7 @@ ControlWheels -> Control wheels On/Off
 HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 
-####Piston####
+##Piston##
 
 Interface name: IMyPistonBase
 Parent: IMyFunctionalBlock
@@ -652,7 +668,7 @@ IMyPistonBase.SetValueFloat("Velocity", 60.0f);
 IMyPistonBase.SetValueFloat("UpperLimit", 60.0f);
 IMyPistonBase.SetValueFloat("LowerLimit", 60.0f);
 
-####Programmable block####
+##Programmable block##
 
 Interface name: IMyProgrammableBlock
 Parent: IMyFunctionalBlock
@@ -663,7 +679,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 Run -> Run
 
-####Projector####
+##Projector##
 
 Interface name: IMyProjector
 Parent: IMyFunctionalBlock
@@ -721,7 +737,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-####Refinery####
+##Refinery##
 
 Interface name: IMyRefinery
 Parent: IMyFunctionalBlock
@@ -748,7 +764,7 @@ HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 Control -> Control
 
-#####Rocket Launcher######
+###Rocket Launcher####
 
 Interface name: IMySmallMissileLauncher
 Parent: IMyFunctionalBlock
@@ -759,7 +775,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-#####Rotor######
+###Rotor####
 
 Interface name: IMyMotorStator
 Parent: IMyMotorBase
@@ -813,7 +829,7 @@ IMyMotorStator.SetValueFloat("LowerLimit", 60.0f);
 IMyMotorStator.SetValueFloat("UpperLimit", 60.0f);
 IMyMotorStator.SetValueFloat("Displacement", 60.0f);
 
-#####Sensor#####
+###Sensor###
 
 Interface name: IMySensorBlock
 Parent: IMyFunctionalBlock
@@ -922,7 +938,7 @@ DecreaseRadius -> Decrease Radius
 IncreaseGravity -> Increase Acceleration
 DecreaseGravity -> Decrease Acceleration
 
-#####Spotlight######
+###Spotlight####
 
 Interface name: IMyReflectorLight
 Parent: IMyLightingBlock
@@ -1076,7 +1092,7 @@ DecreaseFriction -> Decrease Friction
 IncreasePower -> Increase Power
 DecreasePower -> Decrease Power
 
-####### Wheel Suspension 5x5 ########
+##### Wheel Suspension 5x5 ####
 
 Interface name: IMyMotorSuspension
 Parent: IMyMotorBase
@@ -1131,7 +1147,7 @@ IMyGravityGenerator.SetValueFloat("Strength", 1.0f);
 IMyGravityGenerator.SetValueFloat("Friction", 1.0f);
 IMyGravityGenerator.SetValueFloat("Power", 1.0f);
 
-#####Text panel#####
+##Text panel###
 // It is used to enable LCD pannel and TextPanes
 Interface name: IMyTextPanel
 Parent: IMyFunctionalBlock
@@ -1148,12 +1164,15 @@ BackgroundColor->Color
 
 Code in c# get Actions:
 
+```c
 IMyTextPanel.GetActionWithName("OnOff").Apply(IMyTextPanel); //change on to off and off to on 
 IMyTextPanel.GetActionWithName("OnOff_On").Apply(IMyTextPanel);//turn on
 IMyTextPanel.GetActionWithName("OnOff_Off").Apply(IMyTextPanel);//turn off
+```
 
 Code in c#:
 
+```c
 class ImyTextPanel {
 
 	bool WritePublicText(string value, bool append = false);
@@ -1166,9 +1185,9 @@ class ImyTextPanel {
 	void ShowTextureOnScreen();
 
 }
-
+```
 Code example in C#:
-
+```c
 var lcd_name = "name_of_your_LCD";
 //LCD must be plugged on public mode
 void Main() {
@@ -1180,3 +1199,4 @@ void Main() {
      LCD.GetPrivateText(); // get the private text of the private-box
 
 }
+```
