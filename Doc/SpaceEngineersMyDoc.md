@@ -144,53 +144,59 @@ AnyoneCanUse -> Anyone Can Use On/Off
 Interface name: IMyCameraBlock
 Parent: IMyFunctionalBlock
 Fields: None
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-View -> View
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* View -> View
 
 ##Cockpit##
 
 Interface name: IMyCockpit
 Parent: IMyShipController
+```c
 Fields:
 bool ControlWheels
 bool ControlThrusters
 bool HandBrake 
 bool DampenersOverride
+```
 Actions:
-ControlThrusters -> Control thrusters On/Off
-ControlWheels -> Control wheels On/Off
-HandBrake -> Handbrake On/Off
-DampenersOverride -> Inertia dampeners On/Off
+* ControlThrusters -> Control thrusters On/Off
+* ControlWheels -> Control wheels On/Off
+* HandBrake -> Handbrake On/Off
+* DampenersOverride -> Inertia dampeners On/Off
 
 ##Collector##
 
 Interface name: IMyCollector
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Connector##
 
 Interface name: IMyShipConnector
 Parent: IMyFunctionalBlock
 Fields:
+```c
 bool ThrowOut 
 bool CollectAll 
 bool IsLocked 
+```
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-ThrowOut -> Throw Out On/Off
-CollectAll -> Collect All On/Off
-SwitchLock -> Switch lock
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* ThrowOut -> Throw Out On/Off
+* CollectAll -> Collect All On/Off
+* SwitchLock -> Switch lock
 
 ##Control Panel##
 
@@ -203,28 +209,31 @@ Actions: None
 Interface name: IMyCockpit
 Parent: IMyShipController
 Fields:
+```c
 bool ControlWheels
 bool ControlThrusters
 bool HandBrake 
 bool DampenersOverride
+```
 Actions:
-ControlThrusters -> Control thrusters On/Off
-ControlWheels -> Control wheels On/Off
-HandBrake -> Handbrake On/Off
-DampenersOverride -> Inertia dampeners On/Off
+* ControlThrusters -> Control thrusters On/Off
+* ControlWheels -> Control wheels On/Off
+* HandBrake -> Handbrake On/Off
+* DampenersOverride -> Inertia dampeners On/Off
 
 ##Door##
 
 Interface name: IMyDoor
 Parent: IMyFunctionalBlock
 Fields: bool Open
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Open -> Open/Closed
-Open_On -> Open
-Open_Off -> Closed
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Open -> Open/Closed
+* Open_On -> Open
+* Open_Off -> Closed
 
 Code for gettin actions:
 
@@ -248,10 +257,10 @@ Fields:
 ```
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Flight Seat##
 
@@ -266,10 +275,10 @@ bool HandBrake
 bool DampenersOverride
 ```
 Actions:
-ControlThrusters -> Control thrusters On/Off
-ControlWheels -> Control wheels On/Off
-HandBrake -> Handbrake On/Off
-DampenersOverride -> Inertia dampeners On/Off
+* ControlThrusters -> Control thrusters On/Off
+* ControlWheels -> Control wheels On/Off
+* HandBrake -> Handbrake On/Off
+* DampenersOverride -> Inertia dampeners On/Off
 
 ##Gatling Turret##
 
@@ -289,14 +298,14 @@ Terminal properties:
 Radius -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Control -> Control
-IncreaseRange -> Increase Radius
-DecreaseRange -> Decrease Radius
-UseConveyor -> Use Conveyor System On/Off
-Terminal block and action name list - 2/5
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Control -> Control
+* IncreaseRange -> Increase Radius
+* DecreaseRange -> Decrease Radius
+* UseConveyor -> Use Conveyor System On/Off
+* Terminal block and action name list - 2/5
 
 ##Gravity Generator##
 
@@ -313,24 +322,24 @@ float Gravity
 ```
 
 Terminal properties:
-Width -> Single
-Height -> Single
-Depth -> Single
-Gravity -> Single
+* Width -> Single
+* Height -> Single
+* Depth -> Single
+* Gravity -> Single
 
 Actions:
 
-OnOff -> Toggle block On/Off 
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseWidth -> Increase Field width
-DecreaseWidth -> Decrease Field width
-IncreaseHeight -> Increase Field height
-DecreaseHeight -> Decrease Field height
-IncreaseDepth -> Increase Field depth
-DecreaseDepth -> Decrease Field depth
-IncreaseGravity -> Increase Acceleration
-DecreaseGravity -> Decrease Acceleration
+* OnOff -> Toggle block On/Off 
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseWidth -> Increase Field width
+* DecreaseWidth -> Decrease Field width
+* IncreaseHeight -> Increase Field height
+* DecreaseHeight -> Decrease Field height
+* IncreaseDepth -> Increase Field depth
+* DecreaseDepth -> Decrease Field depth
+* IncreaseGravity -> Increase Acceleration
+* DecreaseGravity -> Decrease Acceleration
 
 Code in c# to set values to fields:
 
@@ -348,10 +357,10 @@ Parent: IMyFunctionalBlock
 Fields: None
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Gyroscope##
 
@@ -368,18 +377,18 @@ float Roll
 ```
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreasePower -> Increase Power
-DecreasePower -> Decrease Power
-Override -> Override controls On/Off
-IncreaseYaw -> Increase Yaw override
-DecreaseYaw -> Decrease Yaw override
-IncreasePitch -> Increase Pitch override
-DecreasePitch -> Decrease Pitch override
-IncreaseRoll -> Increase Roll override
-DecreaseRoll -> Decrease Roll override
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreasePower -> Increase Power
+* DecreasePower -> Decrease Power
+* Override -> Override controls On/Off
+* IncreaseYaw -> Increase Yaw override
+* DecreaseYaw -> Decrease Yaw override
+* IncreasePitch -> Increase Pitch override
+* DecreasePitch -> Decrease Pitch override
+* IncreaseRoll -> Increase Roll override
+* DecreaseRoll -> Decrease Roll override
 
 ##Interior Light##
 
@@ -398,25 +407,26 @@ float BlinkOffset
 ```
 
 Terminal properties:
-Color -> Color
-Radius -> Single
-Falloff -> Single
-Intensity -> Single
-Blink Interval -> Single
-Blink Lenght -> Single
-Blink Offset -> Single
+* Color -> Color
+* Radius -> Single
+* Falloff -> Single
+* Intensity -> Single
+* Blink Interval -> Single
+* Blink Lenght -> Single
+* Blink Offset -> Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseRadius -> Increase Radius
-DecreaseRadius -> Decrease Radius
-IncreaseBlink Interval -> Increase Blink Interval
-DecreaseBlink Interval -> Decrease Blink Interval
-IncreaseBlink Lenght -> Increase Blink Length
-DecreaseBlink Lenght -> Decrease Blink Length
-IncreaseBlink Offset -> Increase Blink Offset
-DecreaseBlink Offset -> Decrease Blink Offset
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseRadius -> Increase Radius
+* DecreaseRadius -> Decrease Radius
+* IncreaseBlink Interval -> Increase Blink Interval
+* DecreaseBlink Interval -> Decrease Blink Interval
+* IncreaseBlink Lenght -> Increase Blink Length
+* DecreaseBlink Lenght -> Decrease Blink Length
+* IncreaseBlink Offset -> Increase Blink Offset
+* DecreaseBlink Offset -> Decrease Blink Offset
 
 Code in c# to set values to fields:
 
@@ -447,12 +457,12 @@ Terminal properties:
 Radius -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Control -> Control
-IncreaseRange -> Increase Radius
-DecreaseRange -> Decrease Radius
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Control -> Control
+* IncreaseRange -> Increase Radius
+* DecreaseRange -> Decrease Radius
 
 Code in c# to set values to fields:
 
@@ -470,15 +480,15 @@ Terminal properties:
 BreakForce -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Lock -> Lock
-Unlock -> Unlock
-SwitchLock -> Switch lock
-Autolock -> Autolock On/Off
-IncreaseBreakForce -> Increase Break Force
-DecreaseBreakForce -> Decrease Break Force
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Lock -> Lock
+* Unlock -> Unlock
+* SwitchLock -> Switch lock
+* Autolock -> Autolock On/Off
+* IncreaseBreakForce -> Increase Break Force
+* DecreaseBreakForce -> Decrease Break Force
 
 Code in c# to set values to fields:
 
@@ -507,12 +517,14 @@ Actions: None
 Interface name: IMyReactor
 Parent: IMyFunctionalBlock
 Fields:
+
 bool UseConveyorSystem
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 Code in c#:
 
@@ -540,10 +552,10 @@ Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Small Thruster##
 
@@ -558,11 +570,11 @@ Terminal properties:
 Override -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseOverride -> Increase Thrust override
-DecreaseOverride -> Decrease Thrust override
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseOverride -> Increase Thrust override
+* DecreaseOverride -> Decrease Thrust override
 
 Code in c# to set values to fields:
 ```c
@@ -629,13 +641,13 @@ Terminal properties:
 Range -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Control -> Control
-IncreaseRange -> Increase Radius
-DecreaseRange -> Decrease Radius
-UseConveyor -> Use Conveyor System On/Of
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Control -> Control
+* IncreaseRange -> Increase Radius
+* DecreaseRange -> Decrease Radius
+* UseConveyor -> Use Conveyor System On/Of
 
 Code in c# to set values to fields:
 ```c
@@ -651,11 +663,12 @@ float Range
 bool BroadcastUsingAntennas 
 ```
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Terminal block and action name list - 3/5
-Passenger Seat
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Terminal block and action name list - 3/5
+
+##Passenger Seat##
 Interface name: IMyCockpit
 Parent: IMyShipController
 Fields:
@@ -666,10 +679,10 @@ bool HandBrake
 bool DampenersOverride
 ```
 Actions:
-ControlThrusters -> Control thrusters On/Off
-ControlWheels -> Control wheels On/Off
-HandBrake -> Handbrake On/Off
-DampenersOverride -> Inertia dampeners On/Off
+* ControlThrusters -> Control thrusters On/Off
+* ControlWheels -> Control wheels On/Off
+* HandBrake -> Handbrake On/Off
+* DampenersOverride -> Inertia dampeners On/Off
 
 ##Piston##
 
@@ -688,17 +701,17 @@ UpperLimit -> Single
 LowerLimit -> Single 
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Reverse -> Reverse
-IncreaseVelocity -> Increase Velocity
-DecreaseVelocity -> Decrease Velocity
-ResetVelocity -> Reset Velocity
-IncreaseUpperLimit -> Increase Maximal distance
-DecreaseUpperLimit -> Decrease Maximal distance
-IncreaseLowerLimit -> Increase Minimal distance
-DecreaseLowerLimit -> Decrease Minimal distance
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Reverse -> Reverse
+* IncreaseVelocity -> Increase Velocity
+* DecreaseVelocity -> Decrease Velocity
+* ResetVelocity -> Reset Velocity
+* IncreaseUpperLimit -> Increase Maximal distance
+* DecreaseUpperLimit -> Decrease Maximal distance
+* IncreaseLowerLimit -> Increase Minimal distance
+* DecreaseLowerLimit -> Decrease Minimal distance
 
 Code in c# to set values to fields:
 
@@ -736,29 +749,29 @@ int ProjectionRotZ
 ```
 
 Terminal properties:
-X -> Single
-Y -> Single
-Z -> Single
-RotX -> Single
-RotY -> Single
-RotZ -> Single
+* X -> Single
+* Y -> Single
+* Z -> Single
+* RotX -> Single
+* RotY -> Single
+* RotZ -> Single
 
 Actions:
-OnOff->Toggle block On/Off
-OnOff_On->Toggle block On
-OnOff_Off->Toggle block Off
-IncreaseX->Increase Horizontal offset
-DecreaseX->Decrease Horizontal offset
-IncreaseY->Increase Vertical offset
-DecreaseY->Decrease Vertical offset
-IncreaseZ->Increase Forward offset
-DecreaseZ->Decrease Forward offset
-IncreaseRotX->Increase Pitch
-DecreaseRotX->Decrease Pitch
-IncreaseRotY->Increase Yaw
-DecreaseRotY->Decrease Yaw
-IncreaseRotZ->Increase Roll
-DecreaseRotZ->Decrease Roll
+* OnOff->Toggle block On/Off
+* OnOff_On->Toggle block On
+* OnOff_Off->Toggle block Off
+* IncreaseX->Increase Horizontal offset
+* DecreaseX->Decrease Horizontal offset
+* IncreaseY->Increase Vertical offset
+* DecreaseY->Decrease Vertical offset
+* IncreaseZ->Increase Forward offset
+* DecreaseZ->Decrease Forward offset
+* IncreaseRotX->Increase Pitch
+* DecreaseRotX->Decrease Pitch
+* IncreaseRotY->Increase Yaw
+* DecreaseRotY->Decrease Yaw
+* IncreaseRotZ->Increase Roll
+* DecreaseRotZ->Decrease Roll
 
 Code in c# to set values to fields:
 
@@ -779,22 +792,25 @@ Fields:
 bool UseConveyorSystem
 ```
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Refinery##
 
 Interface name: IMyRefinery
 Parent: IMyFunctionalBlock
 Parent: IMyProductionBlock
-Fields: bool UseConveyorSystem
+
+Fields:
+bool UseConveyorSystem
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Remote Control##
 Interface name: IMyRemoteControl
@@ -809,11 +825,11 @@ bool DampenersOverride
 ```
 
 Actions:
-ControlThrusters -> Control thrusters On/Off
-ControlWheels -> Control wheels On/Off
-HandBrake -> Handbrake On/Off
-DampenersOverride -> Inertia dampeners On/Off
-Control -> Control
+* ControlThrusters -> Control thrusters On/Off
+* ControlWheels -> Control wheels On/Off
+* HandBrake -> Handbrake On/Off
+* DampenersOverride -> Inertia dampeners On/Off
+* Control -> Control
 
 ##Rocket Launcher##
 
@@ -848,34 +864,34 @@ float Displacement
 ```
 
 Terminal properties:
-Torque -> Single
-BrakingTorque -> Single
-Velocity -> Single
-LowerLimit -> Single
-UpperLimit -> Single
-Displacement -> Single
+* Torque -> Single
+* BrakingTorque -> Single
+* Velocity -> Single
+* LowerLimit -> Single
+* UpperLimit -> Single
+* Displacement -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Reverse -> Reverse
-Detach -> Detach
-Attach -> Attach
-IncreaseTorque -> Increase Torque
-DecreaseTorque -> Decrease Torque
-IncreaseBrakingTorque -> Increase Braking tor.
-DecreaseBrakingTorque -> Decrease Braking tor.
-IncreaseVelocity -> Increase Velocity
-DecreaseVelocity -> Decrease Velocity
-ResetVelocity -> Reset Velocity
-IncreaseLowerLimit -> Increase Lower limit
-DecreaseLowerLimit -> Decrease Lower limit
-IncreaseUpperLimit -> Increase Upper limit
-DecreaseUpperLimit -> Decrease Upper limit
-IncreaseDisplacement -> Increase Rotor displacement
-DecreaseDisplacement -> Decrease Rotor displacement
-Terminal block and action name list - 4/5
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Reverse -> Reverse
+* Detach -> Detach
+* Attach -> Attach
+* IncreaseTorque -> Increase Torque
+* DecreaseTorque -> Decrease Torque
+* IncreaseBrakingTorque -> Increase Braking tor.
+* DecreaseBrakingTorque -> Decrease Braking tor.
+* IncreaseVelocity -> Increase Velocity
+* DecreaseVelocity -> Decrease Velocity
+* ResetVelocity -> Reset Velocity
+* IncreaseLowerLimit -> Increase Lower limit
+* DecreaseLowerLimit -> Decrease Lower limit
+* IncreaseUpperLimit -> Increase Upper limit
+* DecreaseUpperLimit -> Decrease Upper limit
+* IncreaseDisplacement -> Increase Rotor displacement
+* DecreaseDisplacement -> Decrease Rotor displacement
+* Terminal block and action name list - 4/5
 
 Code in c# to set values to fields:
 
@@ -915,39 +931,39 @@ bool DetectEnemy
 IMyEntity LastDetectedEntity
 
 Terminal properties:
-Left -> Single
-Right -> Single
-Bottom -> Single
-Top -> Single
-Back -> Single
-Front -> Single
+* Left -> Single
+* Right -> Single
+* Bottom -> Single
+* Top -> Single
+* Back -> Single
+* Front -> Single
 
 Actions:
-OnOff->Toggle block On/Off
-OnOff_On->Toggle block On
-OnOff_Off->Toggle block Off
-IncreaseLeft->Increase Left extent
-DecreaseLeft->Decrease Left extent
-IncreaseRight->Increase Right extent
-DecreaseRight->Decrease Right extent
-IncreaseBottom->Increase Bottom extent
-DecreaseBottom->Decrease Bottom extent
-IncreaseTop->Increase Top extent
-DecreaseTop->Decrease Top extent
-IncreaseBack->Increase Back extent
-DecreaseBack->Decrease Back extent
-IncreaseFront->Increase Front extent
-DecreaseFront->Decrease Front extent
-Detect Players->Detect players On/Off
-Detect Floating Objects->Detect floating objects On/Off
-Detect Small Ships->Detect small ships On/Off
-Detect Large Ships->Detect large ships On/Off
-Detect Stations->Detect stations On/Off
-Detect Asteroids->Detect asteroids On/Off
-Detect Owner->Detect owner On/Off
-Detect Friendly->Detect friendly On/Off
-Detect Neutral->Detect neutral On/Off
-Detect Enemy->Detect enemy On/Off
+* OnOff->Toggle block On/Off
+* OnOff_On->Toggle block On
+* OnOff_Off->Toggle block Off
+* IncreaseLeft->Increase Left extent
+* DecreaseLeft->Decrease Left extent
+* IncreaseRight->Increase Right extent
+* DecreaseRight->Decrease Right extent
+* IncreaseBottom->Increase Bottom extent
+* DecreaseBottom->Decrease Bottom extent
+* IncreaseTop->Increase Top extent
+* DecreaseTop->Decrease Top extent
+* IncreaseBack->Increase Back extent
+* DecreaseBack->Decrease Back extent
+* IncreaseFront->Increase Front extent
+* DecreaseFront->Decrease Front extent
+* Detect Players->Detect players On/Off
+* Detect Floating Objects->Detect floating objects On/Off
+* Detect Small Ships->Detect small ships On/Off
+* Detect Large Ships->Detect large ships On/Off
+* Detect Stations->Detect stations On/Off
+* Detect Asteroids->Detect asteroids On/Off
+* Detect Owner->Detect owner On/Off
+* Detect Friendly->Detect friendly On/Off
+* Detect Neutral->Detect neutral On/Off
+* Detect Enemy->Detect enemy On/Off
 
 ##Solar Panel##
 
@@ -969,21 +985,23 @@ float LoopPeriod
 ```
 
 Terminal properties:
-VolumeSlider->Single
-RangeSlider->Single
-LoopableSlider->Single
+
+* VolumeSlider->Single
+* RangeSlider->Single
+* LoopableSlider->Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseVolumeSlider -> Increase Volume
-DecreaseVolumeSlider -> Decrease Volume
-IncreaseRangeSlider -> Increase Range
-DecreaseRangeSlider -> Decrease Range
-PlaySound -> Play
-StopSound -> Stop
-IncreaseLoopableSlider -> Increase Loop time
-DecreaseLoopableSlider -> Decrease Loop time
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseVolumeSlider -> Increase Volume
+* DecreaseVolumeSlider -> Decrease Volume
+* IncreaseRangeSlider -> Increase Range
+* DecreaseRangeSlider -> Decrease Range
+* PlaySound -> Play
+* StopSound -> Stop
+* IncreaseLoopableSlider -> Increase Loop time
+* DecreaseLoopableSlider -> Decrease Loop time
 
 ##Spherical Gravity Generator##
 Interface name: IMyGravityGeneratorSphere
@@ -996,16 +1014,17 @@ float Radius
 float Gravity
 ```
 Terminal properties:
-Radius -> Single
-Gravity -> Single
+* Radius -> Single
+* Gravity -> Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseRadius -> Increase Radius
-DecreaseRadius -> Decrease Radius
-IncreaseGravity -> Increase Acceleration
-DecreaseGravity -> Decrease Acceleration
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseRadius -> Increase Radius
+* DecreaseRadius -> Decrease Radius
+* IncreaseGravity -> Increase Acceleration
+* DecreaseGravity -> Decrease Acceleration
 
 ##Spotlight##
 
@@ -1024,26 +1043,26 @@ float BlinkOffset
 ```
 
 Terminal properties:
-Color -> Color
-Radius -> Single
-Falloff -> Single
-Intensity -> Single
-Blink Interval -> Single
-Blink Lenght -> Single
-Blink Offset -> Single
+* Color -> Color
+* Radius -> Single
+* Falloff -> Single
+* Intensity -> Single
+* Blink Interval -> Single
+* Blink Lenght -> Single
+* Blink Offset -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseRadius -> Increase Radius
-DecreaseRadius -> Decrease Radius
-IncreaseBlink Interval -> Increase Blink Interval
-DecreaseBlink Interval -> Decrease Blink Interval
-IncreaseBlink Lenght -> Increase Blink Length
-DecreaseBlink Lenght -> Decrease Blink Length
-IncreaseBlink Offset -> Increase Blink Offset
-DecreaseBlink Offset -> Decrease Blink Offset
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseRadius -> Increase Radius
+* DecreaseRadius -> Decrease Radius
+* IncreaseBlink Interval -> Increase Blink Interval
+* DecreaseBlink Interval -> Decrease Blink Interval
+* IncreaseBlink Lenght -> Increase Blink Length
+* DecreaseBlink Lenght -> Decrease Blink Length
+* IncreaseBlink Offset -> Increase Blink Offset
+* DecreaseBlink Offset -> Decrease Blink Offset
 
 ##Timer Block##
 Interface name: IMyTimerBlock
@@ -1057,16 +1076,17 @@ float TriggerDelay
 ```
 
 Terminal properties:
-TriggerDelay -> Single
+* TriggerDelay -> Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseTriggerDelay -> Increase Delay
-DecreaseTriggerDelay -> Decrease Delay
-TriggerNow -> Trigger now
-Start -> Start
-Stop -> Stop
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseTriggerDelay -> Increase Delay
+* DecreaseTriggerDelay -> Decrease Delay
+* TriggerNow -> Trigger now
+* Start -> Start
+* Stop -> Stop
 
 Code for start the block with the C# Code:
 
@@ -1086,24 +1106,26 @@ float DetonationTime
 ```
 
 Terminal properties:
-DetonationTime -> Single 
+* DetonationTime -> Single 
+
 Actions:
-IncreaseDetonationTime -> Increase Detonation time
-DecreaseDetonationTime -> Decrease Detonation time
-StartCountdown -> Start countdown
-StopCountdown -> Stop countdown
-Safety -> Safety On/Off
-Detonate -> Detonate
+* IncreaseDetonationTime -> Increase Detonation time
+* DecreaseDetonationTime -> Decrease Detonation time
+* StartCountdown -> Start countdown
+* StopCountdown -> Stop countdown
+* Safety -> Safety On/Off
+* Detonate -> Detonate
 
 ##Welder##
 Interface name: IMyShipWelder
 Parent: IMyShipToolBase
 Parent: IMyFunctionalBlock
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Wheel Suspension 1x1##
 
@@ -1121,24 +1143,25 @@ float Friction
 float Power
 ```
 Terminal properties:
-Damping -> Single
-Strength -> Single
-Friction -> Single
-Power -> Single 
+* Damping -> Single
+* Strength -> Single
+* Friction -> Single
+* Power -> Single 
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Steering -> Steering On/Off
-Propulsion -> Propulsion On/Off
-IncreaseDamping -> Increase Damping
-DecreaseDamping -> Decrease Damping
-IncreaseStrength -> Increase Strength
-DecreaseStrength -> Decrease Strength
-IncreaseFriction -> Increase Friction
-DecreaseFriction -> Decrease Friction
-IncreasePower -> Increase Power
-DecreasePower -> Decrease Power
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Steering -> Steering On/Off
+* Propulsion -> Propulsion On/Off
+* IncreaseDamping -> Increase Damping
+* DecreaseDamping -> Decrease Damping
+* IncreaseStrength -> Increase Strength
+* DecreaseStrength -> Decrease Strength
+* IncreaseFriction -> Increase Friction
+* DecreaseFriction -> Decrease Friction
+* IncreasePower -> Increase Power
+* DecreasePower -> Decrease Power
 
 ##Wheel Suspension 3x3##
 Interface name: IMyMotorSuspension
@@ -1155,24 +1178,26 @@ float Friction
 float Power
 ```
 Terminal properties:
-Damping -> Single
-Strength -> Single
-Friction -> Single
-Power -> Single
+* Damping -> Single
+* Strength -> Single
+* Friction -> Single
+* Power -> Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Steering -> Steering On/Off
-Propulsion -> Propulsion On/Off
-IncreaseDamping -> Increase Damping
-DecreaseDamping -> Decrease Damping
-IncreaseStrength -> Increase Strength
-DecreaseStrength -> Decrease Strength
-IncreaseFriction -> Increase Friction
-DecreaseFriction -> Decrease Friction
-IncreasePower -> Increase Power
-DecreasePower -> Decrease Power
+
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Steering -> Steering On/Off
+* Propulsion -> Propulsion On/Off
+* IncreaseDamping -> Increase Damping
+* DecreaseDamping -> Decrease Damping
+* IncreaseStrength -> Increase Strength
+* DecreaseStrength -> Decrease Strength
+* IncreaseFriction -> Increase Friction
+* DecreaseFriction -> Decrease Friction
+* IncreasePower -> Increase Power
+* DecreasePower -> Decrease Power
 
 ##Wheel Suspension 5x5##
 
@@ -1192,25 +1217,26 @@ float Power
 ```
 
 Terminal properties:
-Damping -> Single
-Strength -> Single
-Friction -> Single
-Power -> Single 
+* Damping -> Single
+* Strength -> Single
+* Friction -> Single
+* Power -> Single 
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Steering -> Steering On/Off
-Propulsion -> Propulsion On/Off
-IncreaseDamping -> Increase Damping
-DecreaseDamping -> Decrease Damping
-IncreaseStrength -> Increase Strength
-DecreaseStrength -> Decrease Strength
-IncreaseFriction -> Increase Friction
-DecreaseFriction -> Decrease Friction
-IncreasePower -> Increase Power
-DecreasePower -> Decrease Power
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Steering -> Steering On/Off
+* Propulsion -> Propulsion On/Off
+* IncreaseDamping -> Increase Damping
+* DecreaseDamping -> Decrease Damping
+* IncreaseStrength -> Increase Strength
+* DecreaseStrength -> Decrease Strength
+* IncreaseFriction -> Increase Friction
+* DecreaseFriction -> Decrease Friction
+* IncreasePower -> Increase Power
+* DecreasePower -> Decrease Power
+
 Terminal block and action name list - 5/5
 
 Code in c# get Actions:
@@ -1241,14 +1267,14 @@ Interface name: IMyTextPanel
 Parent: IMyFunctionalBlock
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
-Terminal properties :
-FontSize -> Single
-FontColor -> Color
-BackgroundColor->Color
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
+* Terminal properties :
+* FontSize -> Single
+* FontColor -> Color
+* BackgroundColor->Color
 
 Code in c# get Actions:
 
