@@ -317,25 +317,15 @@ Gravity -> Single
 Actions:
 
 OnOff -> Toggle block On/Off 
-
 OnOff_On -> Toggle block On
-
 OnOff_Off -> Toggle block Off
-
 IncreaseWidth -> Increase Field width
-
 DecreaseWidth -> Decrease Field width
-
 IncreaseHeight -> Increase Field height
-
 DecreaseHeight -> Decrease Field height
-
 IncreaseDepth -> Increase Field depth
-
 DecreaseDepth -> Decrease Field depth
-
 IncreaseGravity -> Increase Acceleration
-
 DecreaseGravity -> Decrease Acceleration
 
 Code in c# to set values to fields:
