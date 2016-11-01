@@ -221,18 +221,28 @@ OnOff_Off -> Toggle block Off
 Open -> Open/Closed
 Open_On -> Open
 Open_Off -> Closed
-```c
-code for gettin actions:
 
-	door1.GetActionWithName("Open_Off").Apply(door1);
-    door2.GetActionWithName("OnOff_On").Apply(door2);
-    door2.GetActionWithName("Open").Apply(door2);
+Code for gettin actions:
+
+```c
+
+door1.GetActionWithName("Open_Off").Apply(door1);
+door2.GetActionWithName("OnOff_On").Apply(door2);
+door2.GetActionWithName("Open").Apply(door2);
+
+```
 
 ##Drill##
-```
+
 Interface name: IMyShipDrill
 Parent: IMyFunctionalBlock
-Fields: bool UseConveyorSystem
+
+Fields:
+```c
+ bool UseConveyorSystem
+
+```
+
 Actions:
 OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
@@ -245,11 +255,12 @@ Interface name: IMyCockpit
 Parent: IMyShipController
 
 Fields:
+```c
 bool ControlWheels
 bool ControlThrusters
 bool HandBrake 
 bool DampenersOverride
-
+```
 Actions:
 ControlThrusters -> Control thrusters On/Off
 ControlWheels -> Control wheels On/Off
@@ -264,9 +275,11 @@ Parent: IMyLargeTurretBase
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
 bool UseConveyorSystem 
 bool CanControl
 float Range
+```
 
 Terminal properties:
 Radius -> Single
@@ -288,10 +301,12 @@ Parent: IMyGravityGeneratorBase
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
 float FieldWidth 
 float FieldHeight 
 float FieldDepth 
 float Gravity
+```
 
 Terminal properties:
 Width -> Single
@@ -312,9 +327,9 @@ DecreaseDepth -> Decrease Field depth
 IncreaseGravity -> Increase Acceleration
 DecreaseGravity -> Decrease Acceleration
 
-code in c# to set values to fields:
+Code in c# to set values to fields:
 
-```c
+```C
 IMyGravityGenerator.SetValueFloat("Gravity", 1.0f);
 IMyGravityGenerator.SetValueFloat("Width", 60.0f);
 IMyGravityGenerator.SetValueFloat("Height", 60.0f);
