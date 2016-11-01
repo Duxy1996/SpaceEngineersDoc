@@ -1,3 +1,8 @@
+
+
+#Space Engineers#
+by Carlos Durán
+
 Generic blocks var:
 ```c
 bool Enabled
@@ -117,6 +122,7 @@ Parent: IMyFunctionalBlock
 Fields: float Radius
 Terminal properties:
 Radius -> Single
+
 Actions:
 OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
@@ -261,6 +267,7 @@ Fields:
 bool UseConveyorSystem 
 bool CanControl
 float Range
+
 Terminal properties:
 Radius -> Single
 
@@ -391,7 +398,7 @@ DecreaseBlink Lenght -> Decrease Blink Length
 IncreaseBlink Offset -> Increase Blink Offset
 DecreaseBlink Offset -> Decrease Blink Offset
 
-code in c# to set values to fields:
+Code in c# to set values to fields:
 
 ```c
 IMyInteriorLight.SetValueColor("Color", Color);
@@ -463,7 +470,8 @@ Interface name: IMyCargoContainer
 Fields: None
 Actions: None
 
-Medium Cargo Container
+##Medium Cargo Container##
+
 Interface name: IMyCargoContainer
 Fields: None
 Actions:None
@@ -518,6 +526,7 @@ OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
 ##Small Thruster##
+
 Interface name: IMyThrust
 Parent: IMyFunctionalBlock
 
@@ -727,7 +736,8 @@ IMyProjector.SetValueFloat("RotY", 60.0f);
 IMyProjector.SetValueFloat("RotZ", 60.0f);
 
 
-Reloadable Rocket Launcher
+##Reloadable Rocket Launcher##
+
 Interface name: IMySmallMissileLauncherReload
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
@@ -749,7 +759,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-Remote Control
+##Remote Control##
 Interface name: IMyRemoteControl
 Parent: IMyShipController
 Fields:
@@ -764,7 +774,7 @@ HandBrake -> Handbrake On/Off
 DampenersOverride -> Inertia dampeners On/Off
 Control -> Control
 
-###Rocket Launcher####
+##Rocket Launcher##
 
 Interface name: IMySmallMissileLauncher
 Parent: IMyFunctionalBlock
@@ -775,7 +785,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-###Rotor####
+##Rotor##
 
 Interface name: IMyMotorStator
 Parent: IMyMotorBase
@@ -829,7 +839,7 @@ IMyMotorStator.SetValueFloat("LowerLimit", 60.0f);
 IMyMotorStator.SetValueFloat("UpperLimit", 60.0f);
 IMyMotorStator.SetValueFloat("Displacement", 60.0f);
 
-###Sensor###
+##Sensor##
 
 Interface name: IMySensorBlock
 Parent: IMyFunctionalBlock
@@ -888,12 +898,12 @@ Detect Friendly->Detect friendly On/Off
 Detect Neutral->Detect neutral On/Off
 Detect Enemy->Detect enemy On/Off
 
-Solar Panel
+##Solar Panel##
 Interface name: IMySolarPanel
 Fields:None
 Actions:None
 
-Sound Block
+##Sound Block##
 Interface name: IMySoundBlock
 Parent: IMyFunctionalBlock
 Fields:
@@ -918,7 +928,7 @@ StopSound -> Stop
 IncreaseLoopableSlider -> Increase Loop time
 DecreaseLoopableSlider -> Decrease Loop time
 
-Spherical Gravity Generator
+##Spherical Gravity Generator##
 Interface name: IMyGravityGeneratorSphere
 Parent: IMyGravityGeneratorBase
 Parent: IMyFunctionalBlock
@@ -938,7 +948,7 @@ DecreaseRadius -> Decrease Radius
 IncreaseGravity -> Increase Acceleration
 DecreaseGravity -> Decrease Acceleration
 
-###Spotlight####
+##Spotlight##
 
 Interface name: IMyReflectorLight
 Parent: IMyLightingBlock
@@ -973,7 +983,7 @@ DecreaseBlink Lenght -> Decrease Blink Length
 IncreaseBlink Offset -> Increase Blink Offset
 DecreaseBlink Offset -> Decrease Blink Offset
 
-Timer Block
+##Timer Block##
 Interface name: IMyTimerBlock
 Parent: IMyFunctionalBlock
 
@@ -999,7 +1009,7 @@ IMyTimerBlock.GetActionWithName("Start").Apply(IMyTimerBlock);
 IMyTimerBlock.GetActionWithName("TriggerNow").Apply(IMyTimerBlock);
 IMyTimerBlock.GetActionWithName("Stop").Apply(IMyTimerBlock);
 
-Warhead
+##Warhead##
 Interface name: IMyWarhead
 
 Fields:
@@ -1016,7 +1026,7 @@ StopCountdown -> Stop countdown
 Safety -> Safety On/Off
 Detonate -> Detonate
 
-Welder
+##Welder##
 Interface name: IMyShipWelder
 Parent: IMyShipToolBase
 Parent: IMyFunctionalBlock
@@ -1026,7 +1036,7 @@ OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 UseConveyor -> Use Conveyor System On/Off
 
-Wheel Suspension 1x1
+##Wheel Suspension 1x1##
 Interface name: IMyMotorSuspension
 Parent: IMyMotorBase
 Parent: IMyFunctionalBlock
@@ -1059,7 +1069,7 @@ DecreaseFriction -> Decrease Friction
 IncreasePower -> Increase Power
 DecreasePower -> Decrease Power
 
-Wheel Suspension 3x3
+##Wheel Suspension 3x3##
 Interface name: IMyMotorSuspension
 Parent: IMyMotorBase
 Parent: IMyFunctionalBlock
@@ -1092,7 +1102,7 @@ DecreaseFriction -> Decrease Friction
 IncreasePower -> Increase Power
 DecreasePower -> Decrease Power
 
-##### Wheel Suspension 5x5 ####
+##Wheel Suspension 5x5##
 
 Interface name: IMyMotorSuspension
 Parent: IMyMotorBase
