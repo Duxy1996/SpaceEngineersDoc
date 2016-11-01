@@ -69,11 +69,12 @@ Interface name: IMyRefinery
 Parent: IMyProductionBlock
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 Code in c# :
 
@@ -87,10 +88,11 @@ class IMyRefinery {
 Interface name: IMyVirtualMass
 Parent: IMyFunctionalBlock
 Fields: None
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
 
 ##Assembler##
 
@@ -98,22 +100,24 @@ Interface name: IMyAssembler
 Parent: IMyProductionBlock
 Parent: IMyFunctionalBlock
 Fields: bool UseConveyorSystem
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Battery##
 
 Interface name: IMyBatteryBlock
 Parent: IMyFunctionalBlock
 Fields: bool HasCapacityRemaining
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Recharge -> Recharge On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Recharge -> Recharge On/Off
 
 ##Beacon##
 
@@ -124,11 +128,11 @@ Terminal properties:
 Radius -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseRadius -> Increase Broadcast radius
-DecreaseRadius -> Decrease Broadcast radius
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseRadius -> Increase Broadcast radius
+* DecreaseRadius -> Decrease Broadcast radius
 
 ##Button Panel##
 Interface name: IMyButtonPanel
