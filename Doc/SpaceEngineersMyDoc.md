@@ -27,11 +27,11 @@ Terminal properties:
 Radius -> Single
 
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseRadius -> Increase Broadcast radius
-DecreaseRadius -> Decrease Broadcast radius
+*OnOff -> Toggle block On/Off
+*OnOff_On -> Toggle block On
+*OnOff_Off -> Toggle block Off
+*IncreaseRadius -> Increase Broadcast radius
+*DecreaseRadius -> Decrease Broadcast radius
 
 Code in c# execute orders:
 ```c
