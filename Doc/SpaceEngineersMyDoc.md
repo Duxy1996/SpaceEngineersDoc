@@ -141,7 +141,7 @@ Parent: IMyFunctionalBlock
 Fields:
 ```c
  float Radius
- ```
+```
 Terminal properties:
 Radius -> Single
 
@@ -1447,7 +1447,7 @@ void Main() {
 }
 ```
 
-Fonts:
+Sources:
 Space Engineers oficial:
 - http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
 Space Engineers wiki:
