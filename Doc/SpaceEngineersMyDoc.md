@@ -1,9 +1,11 @@
 Generic blocks var:
+```c
 bool Enabled
 string 	CustomName
 string 	CustomNameWithFaction
 string 	DetailedInfo
 bool 	ShowOnHUD
+```
 
 Fields: only read properties;
 Terminal properties: modifycable properties;
@@ -27,15 +29,15 @@ IncreaseRadius -> Increase Broadcast radius
 DecreaseRadius -> Decrease Broadcast radius
 
 Code in c# execute orders:
-
+```c
 IMyRadioAntenna.GetActionWithName("OnOff").Apply(IMyRadioAntenna); //change on to off and off to on 
 IMyRadioAntenna.GetActionWithName("OnOff_On").Apply(IMyRadioAntenna);//turn on
 IMyRadioAntenna.GetActionWithName("OnOff_Off").Apply(IMyRadioAntenna);//turn off
 IMyRadioAntenna.GetActionWithName("IncreaseRadius").Apply(IMyRadioAntenna);//Increase Radius of action
 IMyRadioAntenna.GetActionWithName("DecreaseRadius").Apply(IMyRadioAntenna);//Reduce Radius of action
-
+```
 code in c# :
-
+```c
 class IMyRadioAntenna {
 	/// Broadcasting/Receiving range (read-only)
 	float Radius;
@@ -44,9 +46,9 @@ class IMyRadioAntenna {
 	/// Returns true if antena is broadcasting (read-only)
 	bool IsBroadcasting;
 }
-
+```
 Code example in C#:
-
+```c
 var antenna_name = "name_of_your_LCD";
 //LCD must be plugged on public mode
 void Main() {
@@ -54,7 +56,7 @@ void Main() {
      IMyRadioAntenna antenna = GridTerminalSystem.GetBlockWithName(antenna_name) as IMyRadioAntenna;
      
 }
-
+```
 
 ####Arc furnace####
 
