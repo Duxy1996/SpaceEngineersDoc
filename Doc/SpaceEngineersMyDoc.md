@@ -1172,10 +1172,10 @@ Fields:
 bool IsRunning
 ```
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-Run -> Run
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* Run -> Run
 
 Code Class in C# :
 ```c
