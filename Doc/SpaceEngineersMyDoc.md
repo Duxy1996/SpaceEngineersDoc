@@ -1,6 +1,6 @@
 
 
-#Space Engineers# 
+#Space Engineers 
 by Carlos Durán
 ![alt text](http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png)
 
@@ -760,7 +760,7 @@ float Range
 ```
 
 Terminal properties:
-Radius -> Single
+* Radius -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -790,7 +790,7 @@ float BreakForce
 ```
 
 Terminal properties:
-BreakForce -> Single
+* BreakForce -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -1506,7 +1506,12 @@ Code Class in C# :
 ```
 Code in C# set terminal values:
 ```c
-	In construction;
+	LastDetectedEntity.SetValueFloat("Left", 60.0f);
+	LastDetectedEntity.SetValueFloat("Right", 60.0f);
+	LastDetectedEntity.SetValueFloat("Bottom", 60.0f);
+	LastDetectedEntity.SetValueFloat("Top", 60.0f);
+	LastDetectedEntity.SetValueFloat("Back", 60.0f);
+	LastDetectedEntity.SetValueFloat("Front", 60.0f);
 
 ```
 Code in c# set Actions:
@@ -1582,7 +1587,9 @@ Code Class in C# :
 ```
 Code in C# set terminal values:
 ```c
-	In construction;
+	IMySoundBlock.SetValueFloat("VolumeSlider", 60.0f);
+	IMySoundBlock.SetValueFloat("RangeSlider", 60.0f);
+	IMySoundBlock.SetValueFloat("LoopableSlider", 60.0f);
 
 ```
 Code in c# set Actions:
@@ -1592,6 +1599,7 @@ Code in c# set Actions:
 ```
 
 ##Spherical Gravity Generator##
+
 Interface name: IMyGravityGeneratorSphere
 Parent: IMyGravityGeneratorBase
 Parent: IMyFunctionalBlock
@@ -1623,7 +1631,8 @@ Code Class in C# :
 ```
 Code in C# set terminal values:
 ```c
-	In construction;
+	IMyGravityGeneratorSphere.SetValueFloat("Radius", 60.0f);
+	IMyGravityGeneratorSphere.SetValueFloat("Gravity", 60.0f);
 
 ```
 Code in c# set Actions:
@@ -1679,7 +1688,13 @@ Code Class in C# :
 ```
 Code in C# set terminal values:
 ```c
-	In construction;
+	IMyReflectorLight.SetValueColor("Color", color_red);
+	IMyReflectorLight.SetValueFloat("Radius", 60.0f);
+	IMyReflectorLight.SetValueFloat("Falloff", 60.0f);
+	IMyReflectorLight.SetValueFloat("Intensity", 60.0f);
+	IMyReflectorLight.SetValueFloat("Blink Interval", 60.0f);
+	IMyReflectorLight.SetValueFloat("Blink Lenght", 60.0f);
+	IMyReflectorLight.SetValueFloat("Blink Offset", 60.0f);
 
 ```
 Code in c# set Actions:
@@ -1987,7 +2002,8 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
-* Terminal properties :
+
+Terminal properties :
 * FontSize -> Single
 * FontColor -> Color
 * BackgroundColor->Color
