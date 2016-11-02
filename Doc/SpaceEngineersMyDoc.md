@@ -1,6 +1,6 @@
 
 
-#Space Engineers#
+#Space Engineers# ![alt text](http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png "Logo Title Text 1")
 by Carlos Durán
 
 Generic blocks var:
