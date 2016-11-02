@@ -21,6 +21,9 @@ only read properties;
 Terminal properties:
 modifycable properties;
 
+
+----------------------
+
 ##Antenna##
 
 Interface name: IMyRadioAntenna
@@ -67,7 +70,7 @@ Code example in C#:
 var antenna_name = "name_of_your_Antenna";
 
 void Main() {
-
+	 var GridTerminalSystem = GridTerminalSystem;
      IMyRadioAntenna antenna = GridTerminalSystem.GetBlockWithName(antenna_name) as IMyRadioAntenna;
      
 }
@@ -106,6 +109,11 @@ Code in C# set Actions:
 ```c
 	In construction;
 
+```
+Code example in C#
+```c
+	var GridTerminalSystem = GridTerminalSystem;
+	var IMyRefinery = GridTerminalSystem.GetBlockWithName("Refinery_2") as IMyRefinery;
 ```
 
 ##Artificial Mass##
@@ -892,6 +900,7 @@ Code example in c#:
 
 ```c
 void Main(){
+	 var GridTerminalSystem = GridTerminalSystem;
 	 IMyReactor  reactor  = GridTerminalSystem.GetBlockWithName("rec") as IMyReactor; 
 	 bool is_fuctional = reactor.IsFuctional;// return true if reactor is working	 
      bool y = reactor.UseConveyorSystem;// if it is connect to others
@@ -1495,6 +1504,9 @@ Actions:
 * Terminal block and action name list - 4/5
 
 Code Class in C# :
+```c
+	In construction;
+```
 Code in C# set terminal values:
 
 ```c
@@ -2062,7 +2074,6 @@ IMyMotorSuspension.GetActionWithName("DecreaseStrength").Apply(IMyMotorSuspensio
 IMyMotorSuspension.GetActionWithName("IncreaseFriction").Apply(IMyMotorSuspension);
 IMyMotorSuspension.GetActionWithName("DecreaseFriction").Apply(IMyMotorSuspension);
 ```
-
 ##Text panel###
 // It is used to enable LCD pannel and TextPanes
 Interface name: IMyTextPanel
@@ -2094,7 +2105,6 @@ class ImyTextPanel {
 
 }
 ```
-
 Code in C# get Actions:
 
 ```c
@@ -2102,20 +2112,18 @@ IMyTextPanel.GetActionWithName("OnOff").Apply(IMyTextPanel); //change on to off 
 IMyTextPanel.GetActionWithName("OnOff_On").Apply(IMyTextPanel);//turn on
 IMyTextPanel.GetActionWithName("OnOff_Off").Apply(IMyTextPanel);//turn off
 ```
-
 Code example in C#:
 ```c
 var lcd_name = "name_of_your_LCD";
 //LCD must be plugged on public mode
 
 void Main() {
-
+	 var GridTerminalSystem = GridTerminalSystem;	
      IMyTextPanel LCD = GridTerminalSystem.GetBlockWithName(lcd_name) as IMyTextPanel;
      LCD.WritePublicText("Hello world",false); //clear the screen and print Hello world     
      LCD.ShowTextureOnScreen();  //show text on LCD screen
      LCD.ShowPublicTextOnScreen();  // shot text on Public mode
      LCD.GetPrivateText(); // get the private text of the private-box
-
 }
 ```
 
