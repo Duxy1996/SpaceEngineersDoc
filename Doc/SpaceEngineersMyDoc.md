@@ -2177,6 +2177,13 @@ More:
 |Method | Return Type | Description|
 |--------|----------|----------------|
 |HasLocalPlayerAccess() | boolean | If a player has Access|
+|HasPlayerAccess(long playerId) | boolean | ... | 
+|RequestShowOnHUD(bool enable) | void | ... | 
+|SetCustomName(string text) | void | Set name of block | 
+|SetCustomName(StringBuilder text) | void | Set name of block | 
+|GetActions(List<ITerminalAction> resultList, Func<ITerminalAction, bool> collect = null) | void | Aviable actions | 
+|GetActionWithName(string name) | ITerminalAction | ... | 
+|ApplyAction(string actionName) | void | ... | 
 
 Sources:
 Space Engineers oficial:
