@@ -2175,7 +2175,7 @@ void Main() {
 More:
 
 |Method | Return Type | Description|
-
+|--------|----------|----------------|
 |HasLocalPlayerAccess() | boolean | If a player has Access|
 
 Sources:
