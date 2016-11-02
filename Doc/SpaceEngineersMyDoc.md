@@ -2172,6 +2172,10 @@ void Main() {
      LCD.GetPrivateText(); // get the private text of the private-box
 }
 ```
+More:
+
+Method | Return Type | Description
+HasLocalPlayerAccess() | boolean | If a player has Access
 
 Sources:
 Space Engineers oficial:
