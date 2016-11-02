@@ -39,15 +39,7 @@ Actions:
 * IncreaseRadius -> Increase Broadcast radius
 * DecreaseRadius -> Decrease Broadcast radius
 
-Code in c# execute orders:
-```c
-IMyRadioAntenna.GetActionWithName("OnOff").Apply(IMyRadioAntenna); //change on to off and off to on 
-IMyRadioAntenna.GetActionWithName("OnOff_On").Apply(IMyRadioAntenna);//turn on
-IMyRadioAntenna.GetActionWithName("OnOff_Off").Apply(IMyRadioAntenna);//turn off
-IMyRadioAntenna.GetActionWithName("IncreaseRadius").Apply(IMyRadioAntenna);//Increase Radius of action
-IMyRadioAntenna.GetActionWithName("DecreaseRadius").Apply(IMyRadioAntenna);//Reduce Radius of action
-```
-Code in c# :
+Code Class in C# :
 ```c
 class IMyRadioAntenna {
 	/// Broadcasting/Receiving range (read-only)
@@ -58,6 +50,16 @@ class IMyRadioAntenna {
 	bool IsBroadcasting;
 }
 ```
+Code in C# set terminal values:
+Code in C# set Actions:
+```c
+IMyRadioAntenna.GetActionWithName("OnOff").Apply(IMyRadioAntenna); //change on to off and off to on 
+IMyRadioAntenna.GetActionWithName("OnOff_On").Apply(IMyRadioAntenna);//turn on
+IMyRadioAntenna.GetActionWithName("OnOff_Off").Apply(IMyRadioAntenna);//turn off
+IMyRadioAntenna.GetActionWithName("IncreaseRadius").Apply(IMyRadioAntenna);//Increase Radius of action
+IMyRadioAntenna.GetActionWithName("DecreaseRadius").Apply(IMyRadioAntenna);//Reduce Radius of action
+```
+
 Code example in C#:
 ```c
 var antenna_name = "name_of_your_Antenna";
@@ -85,9 +87,7 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
-
-Code in c# :
-
+Code Class in C# :
 ```c
 class IMyRefinery {
 
@@ -95,6 +95,17 @@ class IMyRefinery {
 
 }
 ```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Artificial Mass##
 
 Interface name: IMyVirtualMass
@@ -107,6 +118,13 @@ Actions:
 * OnOff -> Toggle block On/Off
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+Code in C# set Actions:
 
 ##Assembler##
 
@@ -123,6 +141,20 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Battery##
 
@@ -138,6 +170,20 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * Recharge -> Recharge On/Off
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Beacon##
 
@@ -157,6 +203,20 @@ Actions:
 * OnOff_Off -> Toggle block Off
 * IncreaseRadius -> Increase Broadcast radius
 * DecreaseRadius -> Decrease Broadcast radius
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Button Panel##
 Interface name: IMyButtonPanel
@@ -167,6 +227,20 @@ Fields:
  ```
 Actions:
 AnyoneCanUse -> Anyone Can Use On/Off
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Camera##
 Interface name: IMyCameraBlock
@@ -180,6 +254,21 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * View -> View
+
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Cockpit##
 
@@ -217,6 +306,21 @@ Actions:
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
 
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Connector##
 
 Interface name: IMyShipConnector
@@ -237,6 +341,17 @@ Actions:
 * CollectAll -> Collect All On/Off
 * SwitchLock -> Switch lock
 
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Control Panel##
 
 Interface name: IMyControlPanel
@@ -245,6 +360,21 @@ Fields:
 None
 Actions: 
 None
+
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Control Station##
 
@@ -265,6 +395,21 @@ Actions:
 * HandBrake -> Handbrake On/Off
 * DampenersOverride -> Inertia dampeners On/Off
 
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Door##
 
 Interface name: IMyDoor
@@ -281,14 +426,16 @@ Actions:
 * Open_On -> Open
 * Open_Off -> Closed
 
-Code for gettin actions:
-
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set Actions:
 ```c
 
 door1.GetActionWithName("Open_Off").Apply(door1);
 door2.GetActionWithName("OnOff_On").Apply(door2);
 door2.GetActionWithName("Open").Apply(door2);
-
 ```
 
 ##Drill##
@@ -310,6 +457,21 @@ Actions:
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
 
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Flight Seat##
 
 Interface name: IMyCockpit
@@ -329,6 +491,21 @@ Actions:
 * ControlWheels -> Control wheels On/Off
 * HandBrake -> Handbrake On/Off
 * DampenersOverride -> Inertia dampeners On/Off
+
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Gatling Turret##
 
@@ -358,6 +535,21 @@ Actions:
 * DecreaseRange -> Decrease Radius
 * UseConveyor -> Use Conveyor System On/Off
 * Terminal block and action name list - 2/5
+
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Gravity Generator##
 
@@ -395,10 +587,12 @@ Actions:
 * IncreaseGravity -> Increase Acceleration
 * DecreaseGravity -> Decrease Acceleration
 
-Code in c# to set values to 
-Fields:
+Code Class in C# :
+```c
+	In construction;
+```
 
-
+Code in C# set Actions:
 ```C
 IMyGravityGenerator.SetValueFloat("Gravity", 1.0f);
 IMyGravityGenerator.SetValueFloat("Width", 60.0f);
@@ -419,6 +613,21 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Gyroscope##
 
@@ -449,6 +658,22 @@ Actions:
 * DecreasePitch -> Decrease Pitch override
 * IncreaseRoll -> Increase Roll override
 * DecreaseRoll -> Decrease Roll override
+
+Code Class in C# :
+```c
+	In construction;
+```
+
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Interior Light##
 
@@ -489,11 +714,11 @@ Actions:
 * DecreaseBlink Lenght -> Decrease Blink Length
 * IncreaseBlink Offset -> Increase Blink Offset
 * DecreaseBlink Offset -> Decrease Blink Offset
-
-Code in c# to set values to 
-Fields:
-
-
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set Actions:
 ```c
 IMyInteriorLight.SetValueColor("Color", Color);
 IMyInteriorLight.SetValueFloat("Radius", 60.0f);
@@ -509,7 +734,20 @@ IMyInteriorLight.SetValueFloat("Blink Offset", 60.0f);
 Interface name: IMyLargeInteriorTurret
 Parent: IMyLargeTurretBase
 Parent: IMyFunctionalBlock
-
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 Fields:
 
@@ -529,9 +767,11 @@ Actions:
 * Control -> Control
 * IncreaseRange -> Increase Radius
 * DecreaseRange -> Decrease Radius
-
-Code in c# to set values to 
-Fields:
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set Actions:
 ```c
 IMyLargeInteriorTurret.SetValueFloat("Radius", 60.0f);
 ```
@@ -560,6 +800,11 @@ Actions:
 * Autolock -> Autolock On/Off
 * IncreaseBreakForce -> Increase Break Force
 * DecreaseBreakForce -> Decrease Break Force
+
+Code Class in C# :
+```c
+	In construction;
+```
 
 Code in c# to set values to 
 
@@ -608,13 +853,11 @@ Actions:
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
 
-Code in c#:
+Code class in c#:
 
 ```c
 class IMyReactor{
-
-
-
+	bool UseConveyorSystem; // read only
 }
 ```
 Code example in c#:
@@ -664,6 +907,11 @@ Actions:
 * IncreaseOverride -> Increase Thrust override
 * DecreaseOverride -> Decrease Thrust override
 
+Code Class in C# :
+```c
+	In construction;
+```
+
 Code in c# to set values to 
 Fields:
 
@@ -692,6 +940,11 @@ OnOff_Off -> Toggle block Off
 IncreaseOverride -> Increase Thrust override
 DecreaseOverride -> Decrease Thrust override
 
+Code Class in C# :
+```c
+	In construction;
+```
+
 Code in c# to set values to 
 Fields:
 
@@ -711,6 +964,21 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Merge Block##
 
 Interface name: IMyShipMergeBlock
@@ -729,7 +997,18 @@ Interface name: IMyLargeMissileTurret
 Parent: IMyLargeConveyorTurretBase
 Parent: IMyLargeTurretBase
 Parent: IMyFunctionalBlock
-
+Code Class in C# :
+```c
+	In construction;
+```
+Code in C# set terminal values:
+```c
+	In construction;
+```
+Code in C# set Actions:
+```c
+	In construction;
+```
 
 Fields:
 
@@ -750,12 +1029,19 @@ Actions:
 * DecreaseRange -> Decrease Radius
 * UseConveyor -> Use Conveyor System On/Of
 
-Code in c# to set values to 
-Fields:
-
+Code Class in C# :
+Code in C# set terminal values:
 ```c
+
 IMyLargeMissileTurret.SetValueFloat("Range", 60.0f);
+
 ```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Ore Detector##
 
 Interace name: IMyOreDetector
@@ -772,6 +1058,22 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * Terminal block and action name list - 3/5
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Passenger Seat##
 Interface name: IMyCockpit
@@ -790,6 +1092,22 @@ Actions:
 * ControlWheels -> Control wheels On/Off
 * HandBrake -> Handbrake On/Off
 * DampenersOverride -> Inertia dampeners On/Off
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Piston##
 
@@ -822,12 +1140,22 @@ Actions:
 * IncreaseLowerLimit -> Increase Minimal distance
 * DecreaseLowerLimit -> Decrease Minimal distance
 
-Code in C# to set values to 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
 
 ```c
 IMyPistonBase.SetValueFloat("Velocity", 60.0f);
 IMyPistonBase.SetValueFloat("UpperLimit", 60.0f);
 IMyPistonBase.SetValueFloat("LowerLimit", 60.0f);
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
 ```
 
 ##Programmable block##
@@ -845,6 +1173,22 @@ OnOff -> Toggle block On/Off
 OnOff_On -> Toggle block On
 OnOff_Off -> Toggle block Off
 Run -> Run
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Projector##
 
@@ -888,17 +1232,25 @@ Actions:
 * IncreaseRotZ->Increase Roll
 * DecreaseRotZ->Decrease Roll
 
-Code in c# to set values to 
-Fields:
-
-
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
 IMyProjector.SetValueFloat("X", 60.0f);
 IMyProjector.SetValueFloat("Y", 60.0f);
 IMyProjector.SetValueFloat("Z", 60.0f);
 IMyProjector.SetValueFloat("RotX", 60.0f);
 IMyProjector.SetValueFloat("RotY", 60.0f);
 IMyProjector.SetValueFloat("RotZ", 60.0f);
-
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Reloadable Rocket Launcher##
 
@@ -915,6 +1267,22 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Refinery##
 
@@ -933,6 +1301,22 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Remote Control##
 Interface name: IMyRemoteControl
@@ -954,6 +1338,22 @@ Actions:
 * HandBrake -> Handbrake On/Off
 * DampenersOverride -> Inertia dampeners On/Off
 * Control -> Control
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in C# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Rocket Launcher##
 
@@ -1021,9 +1421,8 @@ Actions:
 * DecreaseDisplacement -> Decrease Rotor displacement
 * Terminal block and action name list - 4/5
 
-Code in c# to set values to 
-Fields:
-
+Code Class in C# :
+Code in C# set terminal values:
 
 ```c
 IMyMotorStator.SetValueFloat("Torque", 60.0f);
@@ -1033,6 +1432,7 @@ IMyMotorStator.SetValueFloat("LowerLimit", 60.0f);
 IMyMotorStator.SetValueFloat("UpperLimit", 60.0f);
 IMyMotorStator.SetValueFloat("Displacement", 60.0f);
 ```
+Code in c# set Actions:
 
 ##Sensor##
 
@@ -1097,6 +1497,22 @@ Actions:
 * Detect Neutral->Detect neutral On/Off
 * Detect Enemy->Detect enemy On/Off
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Solar Panel##
 
 Interface name: IMySolarPanel
@@ -1106,6 +1522,22 @@ Fields:
 None
 ```
 Actions:None
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Sound Block##
 
@@ -1141,6 +1573,22 @@ Actions:
 * IncreaseLoopableSlider -> Increase Loop time
 * DecreaseLoopableSlider -> Decrease Loop time
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Spherical Gravity Generator##
 Interface name: IMyGravityGeneratorSphere
 Parent: IMyGravityGeneratorBase
@@ -1165,6 +1613,22 @@ Actions:
 * DecreaseRadius -> Decrease Radius
 * IncreaseGravity -> Increase Acceleration
 * DecreaseGravity -> Decrease Acceleration
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Spotlight##
 
@@ -1206,6 +1670,22 @@ Actions:
 * IncreaseBlink Offset -> Increase Blink Offset
 * DecreaseBlink Offset -> Decrease Blink Offset
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Timer Block##
 Interface name: IMyTimerBlock
 Parent: IMyFunctionalBlock
@@ -1232,7 +1712,23 @@ Actions:
 * Start -> Start
 * Stop -> Stop
 
-Code for start the block with the C# Code:
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
+Code _EXAMPLE_ for start the block with the C# Code:
 
 ```c
 IMyTimerBlock.GetActionWithName("Start").Apply(IMyTimerBlock);
@@ -1262,6 +1758,22 @@ Actions:
 * Safety -> Safety On/Off
 * Detonate -> Detonate
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Welder##
 Interface name: IMyShipWelder
 Parent: IMyShipToolBase
@@ -1272,6 +1784,22 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
 
 ##Wheel Suspension 1x1##
 
@@ -1311,6 +1839,22 @@ Actions:
 * IncreasePower -> Increase Power
 * DecreasePower -> Decrease Power
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Wheel Suspension 3x3##
 Interface name: IMyMotorSuspension
 Parent: IMyMotorBase
@@ -1349,6 +1893,22 @@ Actions:
 * IncreasePower -> Increase Power
 * DecreasePower -> Decrease Power
 
+Code Class in C# :
+```c
+	In construction;
+}
+```
+Code in C# set terminal values:
+```c
+	In construction;
+}
+```
+Code in c# set Actions:
+```c
+	In construction;
+}
+```
+
 ##Wheel Suspension 5x5##
 
 Interface name: IMyMotorSuspension
@@ -1357,7 +1917,6 @@ Parent: IMyFunctionalBlock
 
 
 Fields:
-
 
 ```c
 bool Steering 
@@ -1369,12 +1928,14 @@ float Power
 ```
 
 Terminal properties:
+
 * Damping -> Single
 * Strength -> Single
 * Friction -> Single
 * Power -> Single 
 
 Actions:
+
 * OnOff -> Toggle block On/Off
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
@@ -1391,6 +1952,15 @@ Actions:
 
 Terminal block and action name list - 5/5
 
+Code Class in C# :
+
+Code in c# set terminal values:
+```c
+IMyGravityGenerator.SetValueFloat("Damping", 1.0f);
+IMyGravityGenerator.SetValueFloat("Strength", 1.0f);
+IMyGravityGenerator.SetValueFloat("Friction", 1.0f);
+IMyGravityGenerator.SetValueFloat("Power", 1.0f);
+```
 Code in c# get Actions:
 ```c
 IMyMotorSuspension.GetActionWithName("OnOff").Apply(IMyMotorSuspension); //change on to off and off to on 
@@ -1403,14 +1973,6 @@ IMyMotorSuspension.GetActionWithName("IncreaseStrength").Apply(IMyMotorSuspensio
 IMyMotorSuspension.GetActionWithName("DecreaseStrength").Apply(IMyMotorSuspension);
 IMyMotorSuspension.GetActionWithName("IncreaseFriction").Apply(IMyMotorSuspension);
 IMyMotorSuspension.GetActionWithName("DecreaseFriction").Apply(IMyMotorSuspension);
-```
-
-```c
-Code in c# set terminal values:
-IMyGravityGenerator.SetValueFloat("Damping", 1.0f);
-IMyGravityGenerator.SetValueFloat("Strength", 1.0f);
-IMyGravityGenerator.SetValueFloat("Friction", 1.0f);
-IMyGravityGenerator.SetValueFloat("Power", 1.0f);
 ```
 
 ##Text panel###
@@ -1428,16 +1990,7 @@ Actions:
 * FontColor -> Color
 * BackgroundColor->Color
 
-Code in c# get Actions:
-
-```c
-IMyTextPanel.GetActionWithName("OnOff").Apply(IMyTextPanel); //change on to off and off to on 
-IMyTextPanel.GetActionWithName("OnOff_On").Apply(IMyTextPanel);//turn on
-IMyTextPanel.GetActionWithName("OnOff_Off").Apply(IMyTextPanel);//turn off
-```
-
-Code in c#:
-
+Code Class in C# :
 ```c
 class ImyTextPanel {
 
@@ -1452,6 +2005,15 @@ class ImyTextPanel {
 
 }
 ```
+
+Code in C# get Actions:
+
+```c
+IMyTextPanel.GetActionWithName("OnOff").Apply(IMyTextPanel); //change on to off and off to on 
+IMyTextPanel.GetActionWithName("OnOff_On").Apply(IMyTextPanel);//turn on
+IMyTextPanel.GetActionWithName("OnOff_Off").Apply(IMyTextPanel);//turn off
+```
+
 Code example in C#:
 ```c
 var lcd_name = "name_of_your_LCD";
@@ -1469,10 +2031,10 @@ void Main() {
 
 Sources:
 Space Engineers oficial:
-- http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
+ http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
 Space Engineers wiki:
-- http://www.spaceengineerswiki.com/Scripting_API_Documentation
+ http://www.spaceengineerswiki.com/Scripting_API_Documentation
 Space Engineers Game:
-- http://store.steampowered.com/app/244850/
+ http://store.steampowered.com/app/244850/
 Space Engineers Workshop:
-- https://steamcommunity.com/workshop/browse/?appid=244850
+ https://steamcommunity.com/workshop/browse/?appid=244850
