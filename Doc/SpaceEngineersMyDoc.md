@@ -2018,6 +2018,7 @@ Code example in C#:
 ```c
 var lcd_name = "name_of_your_LCD";
 //LCD must be plugged on public mode
+
 void Main() {
 
      IMyTextPanel LCD = GridTerminalSystem.GetBlockWithName(lcd_name) as IMyTextPanel;
