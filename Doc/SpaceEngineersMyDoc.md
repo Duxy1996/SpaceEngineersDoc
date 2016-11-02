@@ -14,8 +14,10 @@ bool 	ShowOnHUD
 
 
 Fields:
- only read properties;
-Terminal properties: modifycable properties;
+only read properties;
+
+Terminal properties:
+modifycable properties;
 
 ##Antenna##
 
@@ -58,8 +60,8 @@ class IMyRadioAntenna {
 ```
 Code example in C#:
 ```c
-var antenna_name = "name_of_your_LCD";
-//LCD must be plugged on public mode
+var antenna_name = "name_of_your_Antenna";
+
 void Main() {
 
      IMyRadioAntenna antenna = GridTerminalSystem.GetBlockWithName(antenna_name) as IMyRadioAntenna;
@@ -88,7 +90,9 @@ Code in c# :
 
 ```c
 class IMyRefinery {
+
 	bool UseConveyorSystem;
+
 }
 ```
 ##Artificial Mass##
@@ -111,8 +115,9 @@ Parent: IMyProductionBlock
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
  bool UseConveyorSystem
-
+```
 Actions:
 * OnOff -> Toggle block On/Off
 * OnOff_On -> Toggle block On
@@ -125,8 +130,9 @@ Interface name: IMyBatteryBlock
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
  bool HasCapacityRemaining
-
+```
 Actions:
 * OnOff -> Toggle block On/Off
 * OnOff_On -> Toggle block On
@@ -156,7 +162,9 @@ Actions:
 Interface name: IMyButtonPanel
 
 Fields:
+```c
  bool AnyoneCanUse
+ ```
 Actions:
 AnyoneCanUse -> Anyone Can Use On/Off
 
@@ -177,10 +185,11 @@ Actions:
 
 Interface name: IMyCockpit
 Parent: IMyShipController
-```c
+
 
 Fields:
 
+```c
 bool ControlWheels
 bool ControlThrusters
 bool HandBrake 
@@ -198,7 +207,9 @@ Interface name: IMyCollector
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
  bool UseConveyorSystem
+```
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -231,8 +242,9 @@ Actions:
 Interface name: IMyControlPanel
 
 Fields:
- None
-Actions: None
+None
+Actions: 
+None
 
 ##Control Station##
 
@@ -520,9 +532,9 @@ Actions:
 
 Code in c# to set values to 
 Fields:
-
-
+```c
 IMyLargeInteriorTurret.SetValueFloat("Radius", 60.0f);
+```
 
 ##Landing Gear##
 
@@ -531,8 +543,9 @@ Parent: IMyFunctionalBlock
 
 
 Fields:
-
+```c
 float BreakForce
+```
 
 Terminal properties:
 BreakForce -> Single
@@ -549,10 +562,10 @@ Actions:
 * DecreaseBreakForce -> Decrease Break Force
 
 Code in c# to set values to 
-Fields:
 
-
+```c
 IMyLandingGear.SetValueFloat("BreakForce", 60.0f);
+```
 
 ##Small Cargo Container##
 
@@ -585,8 +598,9 @@ Parent: IMyFunctionalBlock
 
 Fields:
 
-
+```c
 bool UseConveyorSystem
+```
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -619,7 +633,9 @@ Interface name: IMyReactor
 Parent: IMyFunctionalBlock
 
 Fields:
+```c
  bool UseConveyorSystem
+```
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -689,10 +705,11 @@ Parent: IMyFunctionalBlock
 
 Fields:
  None
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
 
 ##Merge Block##
 
@@ -702,9 +719,9 @@ Parent: IMyFunctionalBlock
 Fields:
  None
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
 
 ##Missile Turret##
 
@@ -805,13 +822,13 @@ Actions:
 * IncreaseLowerLimit -> Increase Minimal distance
 * DecreaseLowerLimit -> Decrease Minimal distance
 
-Code in c# to set values to 
-Fields:
+Code in C# to set values to 
 
-
+```c
 IMyPistonBase.SetValueFloat("Velocity", 60.0f);
 IMyPistonBase.SetValueFloat("UpperLimit", 60.0f);
 IMyPistonBase.SetValueFloat("LowerLimit", 60.0f);
+```
 
 ##Programmable block##
 
@@ -907,8 +924,9 @@ Parent: IMyProductionBlock
 
 
 Fields:
-
+```c
 bool UseConveyorSystem
+```
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -948,10 +966,10 @@ Fields:
 bool UseConveyorSystem
 ```
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-UseConveyor -> Use Conveyor System On/Off
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* UseConveyor -> Use Conveyor System On/Off
 
 ##Rotor##
 
@@ -1084,7 +1102,9 @@ Actions:
 Interface name: IMySolarPanel
 
 Fields:
+```c
 None
+```
 Actions:None
 
 ##Sound Block##
