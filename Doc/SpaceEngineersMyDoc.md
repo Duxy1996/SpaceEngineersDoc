@@ -58,6 +58,10 @@ class IMyRadioAntenna {
 }
 ```
 Code in C# set terminal values:
+```c
+	In construction;
+
+```
 Code in C# set Actions:
 ```c
 IMyRadioAntenna.GetActionWithName("OnOff").Apply(IMyRadioAntenna); //change on to off and off to on 
@@ -104,7 +108,10 @@ class IMyRefinery {
 ```
 Code in C# set terminal values:
 ```c
-	In construction;
+	public interface IMyRefinery : IMyProductionBlock, Ingame.IMyRefinery
+    {
+
+    }
 
 ```
 Code in C# set Actions:
@@ -115,7 +122,7 @@ Code in C# set Actions:
 Code example in C#
 ```c
 	var GridTerminalSystem = GridTerminalSystem;
-	var IMyRefinery = GridTerminalSystem.GetBlockWithName("Refinery_2") as IMyRefinery;
+	var IMyRefinery = GridTerminalSystem.GetBlockWithName("Refinery") as IMyRefinery;
 ```
 
 ##Artificial Mass##
@@ -136,7 +143,15 @@ Code Class in C# :
 
 ```
 Code in C# set terminal values:
+```c
+	In construction;
+
+```
 Code in C# set Actions:
+```c
+	In construction;
+
+```
 
 ##Assembler##
 
@@ -153,9 +168,13 @@ Actions:
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
+
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyAssembler : IMyProductionBlock
+    {
+        bool DisassembleEnabled { get; }
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -231,7 +250,10 @@ Actions:
 * DecreaseRadius -> Decrease Broadcast radius
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyBeacon : IMyFunctionalBlock
+    {
+        float Radius { get; }
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -284,7 +306,10 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyCameraBlock:IMyFunctionalBlock
+    {
+
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -335,7 +360,10 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyCockpit : IMyShipController
+    {
+
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -370,8 +398,14 @@ Actions:
 
 Code in C# set terminal values:
 ```c
-	In construction;
-
+	public interface IMyShipConnector:IMyFunctionalBlock
+    {
+        bool ThrowOut { get; }
+        bool CollectAll { get; }
+        bool IsLocked { get; }
+        bool IsConnected { get; }
+        IMyShipConnector OtherConnector { get; }
+    }
 ```
 Code in C# set Actions:
 ```c
@@ -654,7 +688,10 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyShipGrinder : IMyShipToolBase
+    {
+
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -699,7 +736,14 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyGyro : IMyFunctionalBlock
+    {
+        float GyroPower { get; }
+        bool GyroOverride { get; }
+        float Yaw { get; }
+        float Pitch { get; }
+        float Roll { get; }
+    }
 ```
 
 Code in C# set terminal values:
@@ -2136,7 +2180,8 @@ http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame
 
 Space Engineers wiki:
 
-http://www.spaceengineerswiki.com/Scripting_API_Documentation
+* http://www.spaceengineerswiki.com/Scripting_API_Documentation
+* http://www.spaceengineerswiki.com/Programming
 
 Space Engineers Game:
 
@@ -2145,3 +2190,9 @@ http://store.steampowered.com/app/244850/
 Space Engineers Workshop:
 
 https://steamcommunity.com/workshop/browse/?appid=244850
+
+KeenSoftwareHouse:
+
+* https://github.com/KeenSoftwareHouse
+* https://github.com/KeenSoftwareHouse/SpaceEngineers/tree/master/Sources/Sandbox.Common/ModAPI
+* https://github.com/KeenSoftwareHouse/SpaceEngineers/tree/master/Sources/Sandbox.Common/ModAPI/Ingame
