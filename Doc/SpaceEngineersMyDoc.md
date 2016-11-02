@@ -1,8 +1,9 @@
 
 
 #Space Engineers# 
-![alt text](http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png)
 by Carlos Durán
+![alt text](http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png = 200x100)
+
 
 Generic blocks var:
 ```c
@@ -2034,13 +2035,16 @@ void Main() {
 Sources:
 Space Engineers oficial:
 
- http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
+http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
+
 Space Engineers wiki:
 
- http://www.spaceengineerswiki.com/Scripting_API_Documentation
+http://www.spaceengineerswiki.com/Scripting_API_Documentation
+
 Space Engineers Game:
 
- http://store.steampowered.com/app/244850/
+http://store.steampowered.com/app/244850/
+
 Space Engineers Workshop:
 
- https://steamcommunity.com/workshop/browse/?appid=244850
+https://steamcommunity.com/workshop/browse/?appid=244850
