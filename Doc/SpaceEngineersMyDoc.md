@@ -228,7 +228,8 @@ Fields:
  bool AnyoneCanUse
  ```
 Actions:
-AnyoneCanUse -> Anyone Can Use On/Off
+* AnyoneCanUse -> Anyone Can Use On/Off
+
 Code Class in C# :
 ```c
 	In construction;
