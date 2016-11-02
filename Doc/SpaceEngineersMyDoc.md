@@ -1,8 +1,10 @@
 
 
-#Space Engineers 
+#Space Engineers  ![alt text](http://fukkit.net/media/SpaceEngineers.png)
+
 by Carlos Durán
-![alt text](http://fukkit.net/media/SpaceEngineers.png)
+
+
 
 
 Generic blocks var:
