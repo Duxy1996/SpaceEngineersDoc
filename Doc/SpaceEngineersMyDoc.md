@@ -98,12 +98,12 @@ class IMyRefinery {
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Artificial Mass##
@@ -121,7 +121,7 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 Code in C# set Actions:
@@ -148,12 +148,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Battery##
@@ -177,12 +177,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Beacon##
@@ -210,12 +210,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Button Panel##
@@ -234,12 +234,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Camera##
@@ -262,12 +262,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Cockpit##
@@ -313,12 +313,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Connector##
@@ -344,12 +344,12 @@ Actions:
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Control Panel##
@@ -368,12 +368,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Control Station##
@@ -402,12 +402,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Door##
@@ -464,12 +464,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Flight Seat##
@@ -499,12 +499,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Gatling Turret##
@@ -543,12 +543,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Gravity Generator##
@@ -621,12 +621,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Gyroscope##
@@ -667,12 +667,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Interior Light##
@@ -741,12 +741,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 Fields:
@@ -971,12 +971,12 @@ Code Class in C# :
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Merge Block##
@@ -1039,7 +1039,7 @@ IMyLargeMissileTurret.SetValueFloat("Range", 60.0f);
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Ore Detector##
@@ -1062,17 +1062,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Passenger Seat##
@@ -1096,17 +1096,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Piston##
@@ -1155,7 +1155,7 @@ IMyPistonBase.SetValueFloat("LowerLimit", 60.0f);
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Programmable block##
@@ -1177,17 +1177,17 @@ Run -> Run
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Projector##
@@ -1271,17 +1271,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Refinery##
@@ -1305,17 +1305,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Remote Control##
@@ -1342,17 +1342,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in C# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Rocket Launcher##
@@ -1500,17 +1500,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Solar Panel##
@@ -1526,17 +1526,17 @@ Actions:None
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Sound Block##
@@ -1576,17 +1576,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Spherical Gravity Generator##
@@ -1617,17 +1617,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Spotlight##
@@ -1673,17 +1673,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Timer Block##
@@ -1715,17 +1715,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 Code _EXAMPLE_ for start the block with the C# Code:
@@ -1761,17 +1761,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Welder##
@@ -1788,17 +1788,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Wheel Suspension 1x1##
@@ -1842,17 +1842,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Wheel Suspension 3x3##
@@ -1896,17 +1896,17 @@ Actions:
 Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 Code in C# set terminal values:
 ```c
 	In construction;
-}
+
 ```
 Code in c# set Actions:
 ```c
 	In construction;
-}
+
 ```
 
 ##Wheel Suspension 5x5##
@@ -2031,10 +2031,14 @@ void Main() {
 
 Sources:
 Space Engineers oficial:
+
  http://spaceengineers.io/spaceengineers/doc/namespaceSandbox_1_1ModAPI_1_1Ingame.html
 Space Engineers wiki:
+
  http://www.spaceengineerswiki.com/Scripting_API_Documentation
 Space Engineers Game:
+
  http://store.steampowered.com/app/244850/
 Space Engineers Workshop:
+
  https://steamcommunity.com/workshop/browse/?appid=244850
