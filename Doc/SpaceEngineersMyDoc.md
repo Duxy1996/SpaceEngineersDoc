@@ -174,7 +174,21 @@ Actions:
 * Recharge -> Recharge On/Off
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyBatteryBlock : IMyFunctionalBlock
+    {
+        bool HasCapacityRemaining { get; }
+
+        float CurrentStoredPower { get; }
+        float MaxStoredPower { get; }
+
+        float CurrentInput { get; }
+        float CurrentOutput { get; }
+        bool IsCharging { get; }
+
+        bool OnlyRecharge { get; set; }
+        bool OnlyDischarge { get; set; }
+        bool SemiautoEnabled { get; set; }
+    }
 ```
 Code in C# set terminal values:
 ```c
@@ -431,7 +445,18 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+	public interface IMyDoor : IMyFunctionalBlock
+    {
+        /// <summary>
+        /// Indicates whether door is opened or closed. True when door is opened.
+        /// </summary>
+        bool Open { get; }
+
+        /// <summary>
+        /// Door state, zero is fully closed. One is fully opened.
+        /// </summary>
+        float OpenRatio { get; }
+    }	
 ```
 Code in C# set Actions:
 ```c
@@ -1145,7 +1170,52 @@ Actions:
 
 Code Class in C# :
 ```c
-	In construction;
+
+	public interface IMyPistonBase : IMyFunctionalBlock
+
+    {
+        /// <summary>
+        /// Param - limit is top
+        /// </summary>
+        float Velocity { get; }
+        float MinLimit { get; }
+        float MaxLimit { get; }
+
+        /// <summary>
+        /// Gets the current position of the piston head relative to the base.
+        /// </summary>
+        float CurrentPosition { get; }
+
+        /// <summary>
+        /// Gets the current status.
+        /// </summary>
+        PistonStatus Status { get; }
+
+        /// <summary>
+        /// Gets if the piston base is attached to the top piece
+        /// </summary>
+        bool IsAttached { get; }
+
+        /// <summary>
+        /// Gets if the piston is safety locked (welded)
+        /// </summary>
+        bool IsLocked { get; }
+
+        /// <summary>
+        /// Gets if the piston is looking for a top part
+        /// </summary>
+        bool PendingAttachment { get; }
+
+        /// <summary>
+        /// Attaches a nearby top part to the piston block
+        /// </summary>
+        void Attach();
+
+        /// <summary>
+        /// Detaches the top from the piston
+        /// </summary>
+        void Detach();
+    }
 }
 ```
 Code in C# set terminal values:
