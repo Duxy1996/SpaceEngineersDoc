@@ -2,7 +2,7 @@
 
 #Space Engineers 
 by Carlos Durán
-![alt text](http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png)
+![alt text](http://fukkit.net/media/SpaceEngineers.png)
 
 
 Generic blocks var:
