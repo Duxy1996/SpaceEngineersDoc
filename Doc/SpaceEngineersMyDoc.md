@@ -1953,7 +1953,9 @@ Actions:
 ```
 ####Code in c# set Actions:
 ```c
-	In construction;
+	IMyShipWelder.GetActionWithName("OnOff").Apply(IMyShipWelder); //change on to off and off to on 
+	IMyShipWelder.GetActionWithName("OnOff_On").Apply(IMyShipWelder);//turn on
+	IMyShipWelder.GetActionWithName("OnOff_Off").Apply(IMyShipWelder);//turn off
 
 ```
 
