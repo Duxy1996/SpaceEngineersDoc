@@ -25,6 +25,7 @@ modifycable properties;
 
 
 ----------------------
+----------------------
 
 ##Antenna##
 
@@ -34,10 +35,10 @@ Parent: IMyFunctionalBlock
 
 Fields:
 ```c 
-float Radius
+	float Radius
 ```
 Terminal properties: 
-Radius -> Single
+* Radius -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -130,7 +131,7 @@ Interface name: IMyVirtualMass
 Parent: IMyFunctionalBlock
 
 Fields:
- None
+* None
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -156,7 +157,9 @@ Actions:
 ##Assembler##
 
 Interface name: IMyAssembler
+
 Parent: IMyProductionBlock
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -190,6 +193,7 @@ Actions:
 ##Battery##
 
 Interface name: IMyBatteryBlock
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -293,11 +297,13 @@ Actions:
 ```
 
 ##Camera##
+
 Interface name: IMyCameraBlock
+
 Parent: IMyFunctionalBlock
 
 Fields:
- None
+* None
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -325,7 +331,7 @@ Actions:
 
 ##Cockpit##
 
-Interface name: IMyCockpit \n
+Interface name: IMyCockpit 
 Parent: IMyShipController
 
 
@@ -350,7 +356,7 @@ Parent: IMyFunctionalBlock
 
 Fields:
 ```c
- bool UseConveyorSystem
+ 	bool UseConveyorSystem
 ```
 
 Actions:
@@ -380,6 +386,7 @@ Actions:
 ##Connector##
 
 Interface name: IMyShipConnector
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -419,9 +426,10 @@ Actions:
 Interface name: IMyControlPanel
 
 Fields:
-None
+* None
+
 Actions: 
-None
+* None
 
 ####Code Class in C# :
 ```c
@@ -441,6 +449,7 @@ None
 ##Control Station##
 
 Interface name: IMyCockpit
+
 Parent: IMyShipController
 
 Fields:
@@ -478,7 +487,7 @@ Interface name: IMyDoor
 Parent: IMyFunctionalBlock
 
 Fields:
- bool Open
+* bool Open
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -597,7 +606,7 @@ float Range
 ```
 
 Terminal properties:
-Radius -> Single
+* Radius -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -627,7 +636,9 @@ Actions:
 ##Gravity Generator##
 
 Interface name: IMyGravityGenerator
+
 Parent: IMyGravityGeneratorBase
+
 Parent: IMyFunctionalBlock
 
 
@@ -679,7 +690,7 @@ Parent: IMyShipToolBase
 Parent: IMyFunctionalBlock
 
 Fields:
- None
+* None
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -871,7 +882,7 @@ Parent: IMyFunctionalBlock
 
 Fields:
 ```c
-float BreakForce
+	float BreakForce
 ```
 
 Terminal properties:
@@ -961,6 +972,7 @@ void Main(){
 ##Large Reactor##
 
 Interface name: IMyReactor
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -986,7 +998,7 @@ Fields:
 float ThrustOverride
 ```
 Terminal properties:
-Override -> Single
+* Override -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -1004,13 +1016,14 @@ Actions:
 Fields:
 
 ```c
-IMyThrust.SetValueFloat("Override", 60.0f);
+	IMyThrust.SetValueFloat("Override", 60.0f);
 ```
 
 
 ##Large Thruster##
 
 Interface name: IMyThrust
+
 Parent: IMyFunctionalBlock
 
 
@@ -1020,13 +1033,14 @@ Fields:
 float ThrustOverride
 ```
 Terminal properties:
-Override -> Single
+* Override -> Single
+
 Actions:
-OnOff -> Toggle block On/Off
-OnOff_On -> Toggle block On
-OnOff_Off -> Toggle block Off
-IncreaseOverride -> Increase Thrust override
-DecreaseOverride -> Decrease Thrust override
+* OnOff -> Toggle block On/Off
+* OnOff_On -> Toggle block On
+* OnOff_Off -> Toggle block Off
+* IncreaseOverride -> Increase Thrust override
+* DecreaseOverride -> Decrease Thrust override
 
 ####Code Class in C# :
 ```c
@@ -1084,7 +1098,9 @@ Actions:
 Interface name: IMyLargeMissileTurret
 
 Parent: IMyLargeConveyorTurretBase
+
 Parent: IMyLargeTurretBase
+
 Parent: IMyFunctionalBlock
 
 ####Code Class in C# :
@@ -1108,7 +1124,7 @@ bool CanControl
 float Range
 ```
 Terminal properties:
-Range -> Single
+* Range -> Single
 
 Actions:
 * OnOff -> Toggle block On/Off
@@ -1138,6 +1154,7 @@ IMyLargeMissileTurret.SetValueFloat("Range", 60.0f);
 ##Ore Detector##
 
 Interace name: IMyOreDetector
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -1169,7 +1186,9 @@ Actions:
 ```
 
 ##Passenger Seat##
+
 Interface name: IMyCockpit
+
 Parent: IMyShipController
 
 Fields:
@@ -1331,6 +1350,7 @@ Actions:
 ##Projector##
 
 Interface name: IMyProjector
+
 Parent: IMyFunctionalBlock
 
 
@@ -1373,7 +1393,7 @@ Actions:
 ####Code Class in C# :
 ```c
 	In construction;
-}
+
 ```
 ####Code in C# set terminal values:
 ```c
@@ -1387,7 +1407,6 @@ IMyProjector.SetValueFloat("RotZ", 60.0f);
 ####Code in C# set Actions:
 ```c
 	In construction;
-}
 ```
 
 ##Reloadable Rocket Launcher##
@@ -1457,7 +1476,9 @@ Actions:
 ```
 
 ##Remote Control##
+
 Interface name: IMyRemoteControl
+
 Parent: IMyShipController
 
 Fields:
@@ -1496,6 +1517,7 @@ Actions:
 ##Rocket Launcher##
 
 Interface name: IMySmallMissileLauncher
+
 Parent: IMyFunctionalBlock
 
 Fields:
@@ -1574,10 +1596,15 @@ IMyMotorStator.SetValueFloat("UpperLimit", 60.0f);
 IMyMotorStator.SetValueFloat("Displacement", 60.0f);
 ```
 ####Code in c# set Actions:
+```c
+	In construction;
+
+```
 
 ##Sensor##
 
 Interface name: IMySensorBlock
+
 Parent: IMyFunctionalBlock
 
 
@@ -1739,8 +1766,11 @@ Actions:
 
 ##Spherical Gravity Generator##
 
+
 Interface name: IMyGravityGeneratorSphere
+
 Parent: IMyGravityGeneratorBase
+
 Parent: IMyFunctionalBlock
 
 
@@ -1783,7 +1813,9 @@ Actions:
 ##Spotlight##
 
 Interface name: IMyReflectorLight
+
 Parent: IMyLightingBlock
+
 Parent: IMyFunctionalBlock
 
 
@@ -1843,7 +1875,9 @@ Actions:
 ```
 
 ##Timer Block##
+
 Interface name: IMyTimerBlock
+
 Parent: IMyFunctionalBlock
 
 
@@ -1893,6 +1927,7 @@ IMyTimerBlock.GetActionWithName("Stop").Apply(IMyTimerBlock);
 ```
 
 ##Warhead##
+
 Interface name: IMyWarhead
 
 
@@ -1931,8 +1966,11 @@ Actions:
 ```
 
 ##Welder##
+
 Interface name: IMyShipWelder
+
 Parent: IMyShipToolBase
+
 Parent: IMyFunctionalBlock
 
 Actions:
@@ -1951,16 +1989,20 @@ Actions:
 	In construction;
 
 ```
-####Code in c# set Actions:
+####Code in C# set Actions:
 ```c
-	In construction;
+	IMyShipWelder.GetActionWithName("OnOff").Apply(IMyShipWelder); //change on to off and off to on 
+    IMyShipWelder.GetActionWithName("OnOff_On").Apply(IMyShipWelder);//turn on
+    IMyShipWelder.GetActionWithName("OnOff_Off").Apply(IMyShipWelder);//turn off
 
 ```
 
 ##Wheel Suspension 1x1##
 
 Interface name: IMyMotorSuspension
+
 Parent: IMyMotorBase
+
 Parent: IMyFunctionalBlock
 
 
@@ -2002,18 +2044,33 @@ Actions:
 ```
 ####Code in C# set terminal values:
 ```c
-	In construction;
+IMyMotorSuspension.SetValueFloat("Damping", 1.0f);
+IMyMotorSuspension.SetValueFloat("Strength", 1.0f);
+IMyMotorSuspension.SetValueFloat("Friction", 1.0f);
+IMyMotorSuspension.SetValueFloat("Power", 1.0f);
 
 ```
 ####Code in c# set Actions:
 ```c
-	In construction;
+IMyMotorSuspension.GetActionWithName("OnOff").Apply(IMyMotorSuspension); //change on to off and off to on 
+IMyMotorSuspension.GetActionWithName("OnOff_On").Apply(IMyMotorSuspension);//turn on
+IMyMotorSuspension.GetActionWithName("OnOff_Off").Apply(IMyMotorSuspension);//turn off
+IMyMotorSuspension.GetActionWithName("Steering").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseDamping").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseDamping").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseStrength").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseStrength").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseFriction").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseFriction").Apply(IMyMotorSuspension);
 
 ```
 
 ##Wheel Suspension 3x3##
+
 Interface name: IMyMotorSuspension
+
 Parent: IMyMotorBase
+
 Parent: IMyFunctionalBlock
 
 
@@ -2056,12 +2113,24 @@ Code Class in C# :
 ```
 ####Code in C# set terminal values:
 ```c
-	In construction;
+IMyMotorSuspension.SetValueFloat("Damping", 1.0f);
+IMyMotorSuspension.SetValueFloat("Strength", 1.0f);
+IMyMotorSuspension.SetValueFloat("Friction", 1.0f);
+IMyMotorSuspension.SetValueFloat("Power", 1.0f);
 
 ```
 ####Code in c# set Actions:
 ```c
-	In construction;
+IMyMotorSuspension.GetActionWithName("OnOff").Apply(IMyMotorSuspension); //change on to off and off to on 
+IMyMotorSuspension.GetActionWithName("OnOff_On").Apply(IMyMotorSuspension);//turn on
+IMyMotorSuspension.GetActionWithName("OnOff_Off").Apply(IMyMotorSuspension);//turn off
+IMyMotorSuspension.GetActionWithName("Steering").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseDamping").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseDamping").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseStrength").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseStrength").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("IncreaseFriction").Apply(IMyMotorSuspension);
+IMyMotorSuspension.GetActionWithName("DecreaseFriction").Apply(IMyMotorSuspension);
 
 ```
 
@@ -2109,13 +2178,17 @@ Actions:
 Terminal block and action name list - 5/5
 
 ####Code Class in C# :
+```c
+	In construction;
+
+```
 
 ####Code in c# set terminal values:
 ```c
-IMyGravityGenerator.SetValueFloat("Damping", 1.0f);
-IMyGravityGenerator.SetValueFloat("Strength", 1.0f);
-IMyGravityGenerator.SetValueFloat("Friction", 1.0f);
-IMyGravityGenerator.SetValueFloat("Power", 1.0f);
+IMyMotorSuspension.SetValueFloat("Damping", 1.0f);
+IMyMotorSuspension.SetValueFloat("Strength", 1.0f);
+IMyMotorSuspension.SetValueFloat("Friction", 1.0f);
+IMyMotorSuspension.SetValueFloat("Power", 1.0f);
 ```
 ####Code in c# get Actions:
 ```c
@@ -2131,17 +2204,20 @@ IMyMotorSuspension.GetActionWithName("IncreaseFriction").Apply(IMyMotorSuspensio
 IMyMotorSuspension.GetActionWithName("DecreaseFriction").Apply(IMyMotorSuspension);
 ```
 ##Text panel###
-// It is used to enable LCD pannel and TextPanes
+It is used to enable LCD pannel and TextPanes
+
 Interface name: IMyTextPanel
 Parent: IMyFunctionalBlock
 
 Actions:
+
 * OnOff -> Toggle block On/Off
 * OnOff_On -> Toggle block On
 * OnOff_Off -> Toggle block Off
 * UseConveyor -> Use Conveyor System On/Off
 
 Terminal properties :
+
 * FontSize -> Single
 * FontColor -> Color
 * BackgroundColor->Color
