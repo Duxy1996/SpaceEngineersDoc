@@ -1747,19 +1747,19 @@ Actions:
 * DecreaseLoopableSlider -> Decrease Loop time
 
 ####Code Class in C# :
-```c
+```C
 	In construction;
 
 ```
 ####Code in C# set terminal values:
-```c
-	IMySoundBlock.SetValueFloat("VolumeSlider", 60.0f);
-	IMySoundBlock.SetValueFloat("RangeSlider", 60.0f);
-	IMySoundBlock.SetValueFloat("LoopableSlider", 60.0f);
+```C
+IMySoundBlock.SetValueFloat("VolumeSlider", 60.0f);
+IMySoundBlock.SetValueFloat("RangeSlider", 60.0f);
+IMySoundBlock.SetValueFloat("LoopableSlider", 60.0f);
 
 ```
 ####Code in c# set Actions:
-```c
+```C
 	In construction;
 
 ```
@@ -1800,14 +1800,19 @@ Actions:
 ```
 ####Code in C# set terminal values:
 ```c
-	IMyGravityGeneratorSphere.SetValueFloat("Radius", 60.0f);
-	IMyGravityGeneratorSphere.SetValueFloat("Gravity", 60.0f);
+IMyGravityGeneratorSphere.SetValueFloat("Radius", 60.0f);
+IMyGravityGeneratorSphere.SetValueFloat("Gravity", 60.0f);
 
 ```
 ####Code in c# set Actions:
-```c
-	In construction;
-
+```C
+IMyGravityGeneratorSphere.GetActionWithName("OnOff").Apply(IMyGravityGeneratorSphere);  //change on to off and off to on 
+IMyGravityGeneratorSphere.GetActionWithName("OnOff_On").Apply(IMyGravityGeneratorSphere); //turn on
+IMyGravityGeneratorSphere.GetActionWithName("OnOff_Off").Apply(IMyGravityGeneratorSphere); //turn off
+IMyGravityGeneratorSphere.GetActionWithName("IncreaseRadius").Apply(IMyGravityGeneratorSphere); 
+IMyGravityGeneratorSphere.GetActionWithName("DecreaseRadius").Apply(IMyGravityGeneratorSphere);
+IMyGravityGeneratorSphere.GetActionWithName("IncreaseGravity").Apply(IMyGravityGeneratorSphere); 
+IMyGravityGeneratorSphere.GetActionWithName("DecreaseGravity").Apply(IMyGravityGeneratorSphere);
 ```
 
 ##Spotlight##
@@ -1858,19 +1863,29 @@ Actions:
 
 ```
 ####Code in C# set terminal values:
-```c
-	IMyReflectorLight.SetValueColor("Color", color_red);
-	IMyReflectorLight.SetValueFloat("Radius", 60.0f);
-	IMyReflectorLight.SetValueFloat("Falloff", 60.0f);
-	IMyReflectorLight.SetValueFloat("Intensity", 60.0f);
-	IMyReflectorLight.SetValueFloat("Blink Interval", 60.0f);
-	IMyReflectorLight.SetValueFloat("Blink Lenght", 60.0f);
-	IMyReflectorLight.SetValueFloat("Blink Offset", 60.0f);
+```C
+IMyReflectorLight.SetValueColor("Color", color_red);
+IMyReflectorLight.SetValueFloat("Radius", 60.0f);
+IMyReflectorLight.SetValueFloat("Falloff", 60.0f);
+IMyReflectorLight.SetValueFloat("Intensity", 60.0f);
+IMyReflectorLight.SetValueFloat("Blink Interval", 60.0f);
+IMyReflectorLight.SetValueFloat("Blink Lenght", 60.0f);
+IMyReflectorLight.SetValueFloat("Blink Offset", 60.0f);
 
 ```
 ####Code in c# set Actions:
-```c
-	In construction;
+```C
+IMyReflectorLight.GetActionWithName("OnOff").Apply(IMyReflectorLight);  //change on to off and off to on 
+IMyReflectorLight.GetActionWithName("OnOff_On").Apply(IMyReflectorLight); //turn on
+IMyReflectorLight.GetActionWithName("OnOff_Off").Apply(IMyReflectorLight); //turn off
+IMyReflectorLight.GetActionWithName("IncreaseRadius").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("DecreaseRadius").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("IncreaseBlink Interval").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("DecreaseBlink Interval").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("IncreaseBlink Lenght").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("DecreaseBlink Lenght").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("IncreaseBlink Offset").Apply(IMyReflectorLight); 
+IMyReflectorLight.GetActionWithName("DecreaseBlink Offset").Apply(IMyReflectorLight); 
 
 ```
 
@@ -1884,7 +1899,7 @@ Parent: IMyFunctionalBlock
 Fields:
 
 
-```c
+```C
 bool IsCountingDown 
 float TriggerDelay
 ```
@@ -1903,18 +1918,24 @@ Actions:
 * Stop -> Stop
 
 Code Class in C# :
-```c
+```C
 	In construction;
 
 ```
 ####Code in C# set terminal values:
-```c
-	In construction;
-
+```C
+IMyTimerBlock.SetValueColor("TriggerDelay", 60.0f);
 ```
 ####Code in c# set Actions:
-```c
-	In construction;
+```C
+IMyTimerBlock.GetActionWithName("OnOff").Apply(IMyTimerBlock);  //change on to off and off to on 
+IMyTimerBlock.GetActionWithName("OnOff_On").Apply(IMyTimerBlock); //turn on
+IMyTimerBlock.GetActionWithName("OnOff_Off").Apply(IMyTimerBlock); //turn off
+IMyTimerBlock.GetActionWithName("Start").Apply(IMyTimerBlock);
+IMyTimerBlock.GetActionWithName("TriggerNow").Apply(IMyTimerBlock);
+IMyTimerBlock.GetActionWithName("Stop").Apply(IMyTimerBlock);
+IMyTimerBlock.GetActionWithName("DecreaseTriggerDelay").Apply(IMyTimerBlock);
+IMyTimerBlock.GetActionWithName("IncreaseTriggerDelay").Apply(IMyTimerBlock);
 
 ```
 
@@ -1933,7 +1954,7 @@ Interface name: IMyWarhead
 
 Fields:
 
-```c
+```C
 bool IsCountingDown 
 float DetonationTime
 ```
@@ -1961,8 +1982,15 @@ Actions:
 ```
 ####Code in c# set Actions:
 ```c
-	In construction;
-
+IMyWarhead.GetActionWithName("OnOff").Apply(IMyWarhead);  //change on to off and off to on 
+IMyWarhead.GetActionWithName("OnOff_On").Apply(IMyWarhead); //turn on
+IMyWarhead.GetActionWithName("OnOff_Off").Apply(IMyWarhead); //turn off
+IMyWarhead.GetActionWithName("Detonate").Apply(IMyWarhead);
+IMyWarhead.GetActionWithName("Safety").Apply(IMyWarhead);
+IMyWarhead.GetActionWithName("StopCountdown").Apply(IMyWarhead);
+IMyWarhead.GetActionWithName("StartCountdown").Apply(IMyWarhead);
+IMyWarhead.GetActionWithName("DecreaseDetonationTime").Apply(IMyWarhead);
+IMyWarhead.GetActionWithName("IncreaseDetonationTime").Apply(IMyWarhead);
 ```
 
 ##Welder##
@@ -2008,7 +2036,7 @@ Parent: IMyFunctionalBlock
 
 Fields:
 
-```c
+```C
 bool Steering 
 bool Propulsion 
 float Damping 
@@ -2038,12 +2066,12 @@ Actions:
 * DecreasePower -> Decrease Power
 
 ####Code Class in C# :
-```c
+```C
 	In construction;
 
 ```
 ####Code in C# set terminal values:
-```c
+```C
 IMyMotorSuspension.SetValueFloat("Damping", 1.0f);
 IMyMotorSuspension.SetValueFloat("Strength", 1.0f);
 IMyMotorSuspension.SetValueFloat("Friction", 1.0f);
@@ -2051,7 +2079,7 @@ IMyMotorSuspension.SetValueFloat("Power", 1.0f);
 
 ```
 ####Code in c# set Actions:
-```c
+```C
 IMyMotorSuspension.GetActionWithName("OnOff").Apply(IMyMotorSuspension); //change on to off and off to on 
 IMyMotorSuspension.GetActionWithName("OnOff_On").Apply(IMyMotorSuspension);//turn on
 IMyMotorSuspension.GetActionWithName("OnOff_Off").Apply(IMyMotorSuspension);//turn off
@@ -2076,7 +2104,7 @@ Parent: IMyFunctionalBlock
 
 Fields:
 
-```c
+```C
 bool Steering 
 bool Propulsion 
 float Damping 
