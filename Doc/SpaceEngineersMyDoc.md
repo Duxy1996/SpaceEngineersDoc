@@ -16,9 +16,11 @@ string 	DetailedInfo
 
 
 Fields:
+
 only read properties;
 
 Terminal properties:
+
 modifycable properties;
 
 
