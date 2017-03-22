@@ -4,6 +4,7 @@ A little documentations and codes for programming in c# SpaceEngineers made by m
 Version 1.0
 * Added all classes.
 * Some code examples.
+* Scripts in a folder.
 
 
 
