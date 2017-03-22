@@ -6,6 +6,7 @@ by **Carlos Durán**
 
 
 Generic blocks var:
+
 ```C
 bool Enabled
 bool ShowOnHUD
@@ -34,8 +35,9 @@ Parent: IMyFunctionalBlock
 
 
 Fields:
+
 ```C 
-float Radius
+    float Radius
 ```
 Terminal properties: 
 * Radius -> Single
